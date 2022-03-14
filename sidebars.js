@@ -27,22 +27,12 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '硬件设计 - 应用方案',
+      label: 'wp',
       items: [
-        'OSD335x最小系统的设计',
-        '如何设计一款单片机的最小系统', // CSDN
-        'STM32F4硬件开发',
-        '直流有刷电机驱动的设计',
-        'TinyDVR-小巧身材，满载动力',
-        'RaptorDVR-集成稳压的30A双电机驱动',
-        'SwiftCtrl-蓝牙手柄',
-        'AirForce-充满灵性的电机驱动模块',
-        'ZenDriver-高性能的电机驱动',
-        '自制CMSIS-DAP',
-        'PCB名片的设计',
-        '防反接电路的设计',
-        '电源的设计-常用芯片方案收集',
-        '电源方案（Buck）-LMR14050',
+        'nssctf-SWPU新生赛web部分',
+        'cnss2021-web部分', // CSDN
+        '复现2020区赛部分web题',
+        '2021极客大挑战-web',
       ],
     },
 
