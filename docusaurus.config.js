@@ -9,7 +9,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "/img/favicon.ico",
+  favicon: "img/favicon.ico",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -21,7 +21,7 @@ module.exports = {
         */
 
     //sidebarCollapsible: true, //默认折叠
-    image: '/img/avatar.jpg',
+    image: 'img/avatar.jpg',
     algolia: {
       apiKey: "eb9534130814212c2cba74d1194bbff1",
       indexName: "docusaurus-dusky.vercel.app",
@@ -127,7 +127,7 @@ module.exports = {
           showReadingTime: false,
           path: 'blog',
           blogSidebarTitle: 'Recent',
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
           /*
           feedOptions: {
             type: 'all', // required. 'rss' | 'feed' | 'all'
