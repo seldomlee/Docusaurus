@@ -9,7 +9,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: 'img/favicon.ico',
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -20,11 +20,10 @@ module.exports = {
         },
         */
 
-    //sidebarCollapsible: true, //默认折叠
     image: 'img/avatar.jpg',
     algolia: {
-      apiKey: "eb9534130814212c2cba74d1194bbff1",
-      indexName: "docusaurus-dusky.vercel.app",
+      apiKey: "16b3d7deeb808a05b093ae40cc25b260",
+      indexName: "Z6DQZ749EW",
 
       // Optional: see doc section bellow
       contextualSearch: true,
