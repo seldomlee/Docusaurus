@@ -5,17 +5,6 @@ id: ctfshow-终极考核
 
 <!-- more -->
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1451744552&auto=0&height=66"></iframe>
-
-```
-# 上面播放器的代码如下（仅网易云外链链接，其他播放器请自行百度）
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1451744552&auto=0&height=66"></iframe>
-# width(宽度) ; height(高度)
-# type = 歌曲(1) | 歌单(2) | 电台(3)
-# id = 歌曲ID号
-# auto = 自动播放(1) | 手动播放(0)
-```
-
 官方wp出啦：[CTFshow web入门 终极考核 (shimo.im)](https://shimo.im/docs/3XYdJp3RwQw6kHCx/read)
 
 ## 640
