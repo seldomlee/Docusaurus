@@ -1,63 +1,41 @@
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 module.exports = {
-  title: "Na0H's Wiki",              // 站点名称
-  tagline: '',  // 站点描述
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',           // 站点的图标
-   
-  url: 'https://docusaurus-dusky.vercel.app/', // GitHub 页面的 URL
-  baseUrl: '/',                         // 项目的基本 URL 设置为 /仓库名/
-  organizationName: '',            // 设置为 Github 用户名
-  projectName: '',   // 设置为 Github 仓库名
-  
-  
+  title: "Power's Wiki",
+  //titleDelimiter: "🦖", // Defaults to `|`
+  tagline: "^_^",
+  url: "https://wiki-power.com",
+  baseUrl: "/",
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
+  //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
+  //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
-
-    // 配置搜索栏需要到 algolia 配置
-    // algolia: {
-    //   apiKey: 'YOUR_API_KEY',
-    //   indexName: 'YOUR_INDEX_NAME',
-
-    //   // Optional: see doc section bellow
-    //   contextualSearch: true,
-
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
-
-    //   //... other Algolia params
-    // },
-    // 导航栏配置
-    navbar: {
-      title: "Na0H's Wiki",                 // 名称
-      
-      // 设置logo 如果需要可以取消注释  logo文件推荐转为 .svg 格式
-      // logo: {
-      //   alt: 'My Site Logo',            
-      //   src: 'img/logo.svg',
-      // },
-      
-      // 导航栏上的按钮  按照相应的格式可以创建新的按钮
-      items: [
-        {
-          to: '/',                   // 要跳转的页面
-          label: '博客',                // 按钮名称
-          position: 'right'              // 按钮位于左边还是右边
+    /*
+        footer: {
+          
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
         },
-        
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: '文档',
-          position: 'right',
-        },
-        
-        {
-          href: 'https://github.com/rcxxx/docusaurus-template',  // 如果要跳转链接则使用 herf
-          label: '本站源码',
-          position: 'right',
-        },
-      ],
+        */
+
+    //sidebarCollapsible: true, //默认折叠
+    image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
+    algolia: {
+      apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
+      indexName: "wiki-power",
+
+      // Optional: see doc section bellow
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
     },
+
+
 
 
     colorMode: {
@@ -89,45 +67,86 @@ module.exports = {
       },
     },
 
-    // 页脚配置
-    footer: {
-      style: 'dark',                    // 页脚风格
-      links: [
-
-        // 同样的方式创建一个分类
+    hideableSidebar: false,
+    navbar: {
+      title: "Power's Wiki",
+      hideOnScroll: false,
+      //style: 'primary',
+      /*
+      logo: {
+        alt: "My Site Logo",
+        src:
+          "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
+      },
+      */
+      items: [{
+          to: "blog",
+          label: "博客",
+          position: "right",
+        },
+        /*
         {
-          title: 'Docs',
-          // 同样的格式创建新的按钮
-          items: [
-            {
-              label: 'start',           // 标签
-              to: 'docs/',              // 要跳转的页面
-            },
-          ],
+          href: "https://wiki.wildwolf.pw/",
+          label: "队内知识库",
+          position: "right",
+        },
+        */
+        {
+          href: "http://digest.wiki-power.com/",
+          label: "书摘",
+          position: "right",
+        },
+        {
+          href: "https://nav.wiki-power.com/",
+          label: "友链 & 导航站",
+          position: "right",
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
   },
-  
+
+  stylesheets: [{
+    href: 'https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/static/katex/v0.12.0/katex.min.css',
+    type: 'text/css',
+    integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
+    crossorigin: 'anonymous',
+  }, ],
+
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
-        blog: {
-          showReadingTime: true,
-          path: "./blog",
-          routeBasePath: "/",           // 这里将 blog/ 设置为首页
-        },
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          
-          // 修改为自己的链接，在文章底部添加编辑此页面的链接
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/edit/master/website/',
+          sidebarCollapsible: true, //默认折叠
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
+          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+        },
+        blog: {
+          //blogTitle: 'Power\'s blog!',
+          //blogDescription: 'A docusaurus powered blog!',
+          blogSidebarCount: 8,
+          postsPerPage: 8,
+          showReadingTime: false,
+          path: 'blog',
+          blogSidebarTitle: 'Recent',
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          /*
+          feedOptions: {
+            type: 'all', // required. 'rss' | 'feed' | 'all'
+            title: 'Power\'s Blog', // default to siteConfig.title
+            description: '个人博客', // default to  `${siteConfig.title} Blog`
+            copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
+            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+          },
+          */
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
