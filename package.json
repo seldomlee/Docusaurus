@@ -1,5 +1,5 @@
 {
-  "name": "docusaurus-template",
+  "name": "wiki-docusaurus",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,14 +12,17 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.70",
-    "@docusaurus/preset-classic": "2.0.0-alpha.70",
-    "@docusaurus/theme-bootstrap": "^2.0.0-alpha.70",
-    "@docusaurus/theme-search-algolia": "^2.0.0-alpha.70",
+    "@docsearch/react": "^3.0.0-alpha.50",
+    "@docusaurus/core": "^2.0.0-beta.14",
+    "@docusaurus/mdx-loader": "^2.0.0-beta.14",
+    "@docusaurus/plugin-content-docs": "^2.0.0-beta.14",
+    "@docusaurus/preset-classic": "^2.0.0-beta.14",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "rehype-katex": "^4.0.0",
+    "remark-math": "^3.0.1"
   },
   "browserslist": {
     "production": [
