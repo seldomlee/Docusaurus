@@ -1,15 +1,6 @@
 ---
 title: ctfshow-xss
-date: 2021-09-04 17:38:33
-author: Na0H
-headimg: /img/atimg/xss.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow xss
-description:  ctfshow xss
-
+id: ctfshow-xss
 ---
 
 <!-- more -->

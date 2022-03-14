@@ -1,16 +1,6 @@
 ---
 title: ctfshow-ssrf
-date: 2021-09-3 15:53:33
-author: Na0H
-headimg: /img/atimg/ssrf.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow ssrf
-description:  ctfshow ssrf
-
-
+id: ctfshow-ssrf
 ---
 
 <!-- more -->

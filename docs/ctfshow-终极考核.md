@@ -1,16 +1,6 @@
 ---
 title: ctfshow-终极考核
-date: 2021-12-15 13:23:30
-author: Na0H
-headimg: /img/atimg/zjkh.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow终极考核
-description:  ctfshow终极考核
-
-
+id: ctfshow-终极考核
 ---
 
 <!-- more -->

@@ -1,16 +1,8 @@
 ---
 title: ctfshow-重温反序列化
-date: 2021-10-08 12:40:30
-author: Na0H
-backup: /img/atimg/20.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow重温反序列化
-description:  ctfshow重温反序列化
-
+id: ctfshow-重温反序列化
 ---
+
 <!-- more -->
 
 因为之前做的没写在md上，打算重做一遍，先从有点薄弱的反序列化开始，

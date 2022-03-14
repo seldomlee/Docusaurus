@@ -1,15 +1,6 @@
 ---
 title: ctfshow-黑盒测试
-date: 2021-10-21 16:43:30
-author: Na0H
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow-黑盒测试
-description:  ctfshow-黑盒测试
-
-
+id: ctfshow-黑盒测试
 ---
 
 <!-- more -->

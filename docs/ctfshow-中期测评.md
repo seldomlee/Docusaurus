@@ -1,15 +1,6 @@
 ---
 title: ctfshow-中期测评
-date: 2021-11-22 14:10:30
-author: Na0H
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow-中期测评
-description:  ctfshow-中期测评
-
-
+id: ctfshow-中期测评
 ---
 
 <!-- more -->

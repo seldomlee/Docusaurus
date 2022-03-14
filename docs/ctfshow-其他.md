@@ -1,14 +1,6 @@
 ---
 title: ctfshow-其他
-date: 2021-11-09 18:31:30
-author: Na0H
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow-其他
-description:  ctfshow-其他
-
+id: ctfshow-其他
 ---
 
 <!-- more -->

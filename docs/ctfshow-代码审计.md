@@ -1,14 +1,6 @@
 ---
 title: ctfshow-代码审计
-date: 2021-010-06 20:40:30
-author: Na0H
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow 代码审计
-description:  ctfshow 代码审计
-
+id: ctfshow-代码审计
 ---
 
 <!-- more -->

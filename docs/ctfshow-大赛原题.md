@@ -1,15 +1,6 @@
 ---
 title: ctfshow-大赛原题（未完）
-date: 2022-1-11 15:47:30
-update: 2022-2-14 18:00:30
-author: Na0H
-headimg: /img/atimg/flag_logo.gif
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow-大赛原题（未完）
-description:  ctfshow-大赛原题（未完）
+id: ctfshow-大赛原题（未完）
 ---
 
 <!-- more -->

@@ -1,13 +1,6 @@
 ---
 title: ctfshow-8月赛吃瓜杯
-date: 2021-08-16 20:05:30
-author: Na0H
-tags:	
-- ctf
-categories:
-- ctf
-excerpt: ctfshow 8月赛
-description:  ctfshow 8月赛
+id: ctfshow-8月赛吃瓜杯
 ---
 
 <!-- more -->

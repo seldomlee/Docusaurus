@@ -1,14 +1,6 @@
 ---
 title: ctfshow-xxe
-date: 2021-08-21 13:33:33
-author: Na0H
-headimg: /img/atimg/xxe.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow xxe
-description:  ctfshow xxe
+id: ctfshow-xxe
 ---
 
 <!-- more -->

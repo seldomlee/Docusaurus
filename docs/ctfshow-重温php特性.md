@@ -1,15 +1,6 @@
 ---
 title: ctfshow-重温php特性
-date: 2022-1-4 00:47:30
-author: Na0H
-headimg: /img/atimg/php.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow-重温php特性
-description:  ctfshow-重温php特性
-
+id: ctfshow-重温php特性
 ---
 
 <!-- more -->

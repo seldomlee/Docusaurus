@@ -1,15 +1,6 @@
 ---
 title: ctfshow-sql注入
-date: 2021-08-01 16:33:30
-author: Na0H
-headimg: /img/atimg/sql.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow sql注入
-description:  ctfshow sql注入
-
+id: ctfshow-sql注入
 ---
 
 <!-- more -->

@@ -1,15 +1,6 @@
 ---
 title: ctfshow-ssti
-date: 2021-08-11 13:33:33
-author: Na0H
-headimg: /img/atimg/ssti.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow ssti
-description:  ctfshow ssti
-
+id: ctfshow-ssti
 ---
 
 <!-- more -->

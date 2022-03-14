@@ -1,15 +1,6 @@
 ---
 title: ctfshow-jwt
-date: 2021-08-25 6:40:33
-author: Na0H
-headimg: /img/atimg/jwt.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow jwt
-description:  ctfshow jwt
-
+id: ctfshow-jwt
 ---
 
 <!-- more -->

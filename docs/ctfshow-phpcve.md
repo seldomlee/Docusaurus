@@ -1,15 +1,6 @@
 ---
 title: ctfshow-phpcve
-date: 2021-010-07 12:40:30
-author: Na0H
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow phpcve
-description:  ctfshow phpcve
-
-
+id: ctfshow-phpcve
 ---
 
 <!-- more -->

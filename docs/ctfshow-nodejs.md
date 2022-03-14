@@ -1,14 +1,6 @@
 ---
 title: ctfshow-nodejs
-date: 2021-09-08 16:05:30
-author: Na0H
-headimg: /img/atimg/nodejs.png
-tags:	
-- ctfshow
-categories:
-- ctfshow
-excerpt: ctfshow nodejs
-description:  ctfshow nodejs
+id: ctfshow-nodejs
 ---
 
 <!-- more -->
