@@ -2,14 +2,14 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-  title: "Power's Wiki",
+  title: "Na0H's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
   tagline: "^_^",
-  url: "https://wiki-power.com",
+  url: "https://docusaurus-dusky.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png",
+  favicon: "/img/favicon.ico",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -21,10 +21,10 @@ module.exports = {
         */
 
     //sidebarCollapsible: true, //默认折叠
-    image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
+    image: '/img/avatar.jpg',
     algolia: {
-      apiKey: "5c07d8bf9c9928c4453857f6cad0420e",
-      indexName: "wiki-power",
+      apiKey: "eb9534130814212c2cba74d1194bbff1",
+      indexName: "na0h",
 
       // Optional: see doc section bellow
       contextualSearch: true,
@@ -69,7 +69,7 @@ module.exports = {
 
     hideableSidebar: false,
     navbar: {
-      title: "Power's Wiki",
+      title: "Na0H's Wiki",
       hideOnScroll: false,
       //style: 'primary',
       /*
@@ -84,23 +84,16 @@ module.exports = {
           label: "博客",
           position: "right",
         },
-        /*
-        {
-          href: "https://wiki.wildwolf.pw/",
-          label: "队内知识库",
-          position: "right",
-        },
-        */
-        {
-          href: "http://digest.wiki-power.com/",
-          label: "书摘",
-          position: "right",
-        },
-        {
-          href: "https://nav.wiki-power.com/",
-          label: "友链 & 导航站",
-          position: "right",
-        },
+        // {
+        //   href: "http://digest.wiki-power.com/",
+        //   label: "书摘",
+        //   position: "right",
+        // },
+        // {
+        //   href: "https://nav.wiki-power.com/",
+        //   label: "友链 & 导航站",
+        //   position: "right",
+        // },
       ],
     },
   },
@@ -116,35 +109,35 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        docs: {
-          sidebarCollapsible: true, //默认折叠
-          routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
-          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
-        },
-        blog: {
-          //blogTitle: 'Power\'s blog!',
-          //blogDescription: 'A docusaurus powered blog!',
-          blogSidebarCount: 8,
-          postsPerPage: 8,
-          showReadingTime: false,
-          path: 'blog',
-          blogSidebarTitle: 'Recent',
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
-          /*
-          feedOptions: {
-            type: 'all', // required. 'rss' | 'feed' | 'all'
-            title: 'Power\'s Blog', // default to siteConfig.title
-            description: '个人博客', // default to  `${siteConfig.title} Blog`
-            copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
-            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
-          },
-          */
-        },
+        // docs: {
+        //   sidebarCollapsible: true, //默认折叠
+        //   routeBasePath: "/",
+        //   sidebarPath: require.resolve("./sidebars.js"),
+        //   showLastUpdateAuthor: false,
+        //   showLastUpdateTime: false,
+        //   editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
+        //   remarkPlugins: [math],
+        //   rehypePlugins: [katex],
+        // },
+        // blog: {
+        //   //blogTitle: 'Power\'s blog!',
+        //   //blogDescription: 'A docusaurus powered blog!',
+        //   blogSidebarCount: 8,
+        //   postsPerPage: 8,
+        //   showReadingTime: false,
+        //   path: 'blog',
+        //   blogSidebarTitle: 'Recent',
+        //   editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          
+        //   feedOptions: {
+        //     type: 'all', // required. 'rss' | 'feed' | 'all'
+        //     title: 'Power\'s Blog', // default to siteConfig.title
+        //     description: '个人博客', // default to  `${siteConfig.title} Blog`
+        //     copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
+        //     language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+        //   },
+          
+        // },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
