@@ -1,11 +1,11 @@
 module.exports = {
-  title: "Someone's Site",              // 站点名称
-  tagline: 'The tagline of this site',  // 站点描述
+  title: "Na0H's Wiki",              // 站点名称
+  tagline: '',  // 站点描述
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',           // 站点的图标
-  
-  url: 'https://your-docusaurus-test-site.com', // GitHub 页面的 URL
+   
+  url: 'https://docusaurus-dusky.vercel.app/', // GitHub 页面的 URL
   baseUrl: '/',                         // 项目的基本 URL 设置为 /仓库名/
   organizationName: '',            // 设置为 Github 用户名
   projectName: '',   // 设置为 Github 仓库名
@@ -28,7 +28,7 @@ module.exports = {
     // },
     // 导航栏配置
     navbar: {
-      title: "Someone's Site",                 // 名称
+      title: "Na0H's Wiki",                 // 名称
       
       // 设置logo 如果需要可以取消注释  logo文件推荐转为 .svg 格式
       // logo: {
@@ -40,15 +40,15 @@ module.exports = {
       items: [
         {
           to: '/',                   // 要跳转的页面
-          label: 'Blog',                // 按钮名称
-          position: 'left'              // 按钮位于左边还是右边
+          label: '博客',                // 按钮名称
+          position: 'right'              // 按钮位于左边还是右边
         },
         
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          label: '文档',
+          position: 'right',
         },
         
         {
