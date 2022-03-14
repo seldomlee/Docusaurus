@@ -24,7 +24,7 @@ module.exports = {
     image: '/img/avatar.jpg',
     algolia: {
       apiKey: "eb9534130814212c2cba74d1194bbff1",
-      indexName: "na0h",
+      indexName: "docusaurus-dusky.vercel.app",
 
       // Optional: see doc section bellow
       contextualSearch: true,
