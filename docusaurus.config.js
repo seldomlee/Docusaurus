@@ -119,8 +119,8 @@ module.exports = {
           rehypePlugins: [katex],
         },
         blog: {
-          //blogTitle: 'Power\'s blog!',
-          //blogDescription: 'A docusaurus powered blog!',
+          //blogTitle: 'Na0H\'s blog!',
+          //blogDescription: '',
           blogSidebarCount: 8,
           postsPerPage: 8,
           showReadingTime: false,
