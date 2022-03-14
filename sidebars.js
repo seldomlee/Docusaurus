@@ -5,7 +5,7 @@ module.exports = {
       label: 'Start',
       items: [
         'template',
-        '正则表达式',
+        'Regular-expression',
         '21年7月练习记录'
       ],
     },
