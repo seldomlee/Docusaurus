@@ -115,7 +115,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
-          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
+          editUrl: "https://github.com/seldomlee/Docusaurus/edit/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
