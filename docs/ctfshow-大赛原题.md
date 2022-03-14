@@ -802,9 +802,9 @@ $option='\';
 ?>
 ```
 
-`call_user_func($func,$_GET);`，可令$func=extract实现变量覆盖
+`call_user_func($func,$_GET);`，可令`$func=extract`实现变量覆盖
 
-从而实现对$file的控制，利用文件包含：`include($file);`
+从而实现对`$file`的控制，利用文件包含：`include($file);`
 
 ### 伪协议rce
 

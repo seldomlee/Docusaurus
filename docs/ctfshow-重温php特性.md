@@ -477,8 +477,8 @@ var_dump($a);  返回false
 ?v1=1&v2=?><?= system('tac ctfshow.php')?>&v3=;
 ```
 
-解法2：提示flag在类ctfshow里，并且已经new给变量$ctfshow了
-可以直接输出$ctfshow的值：
+解法2：提示flag在类ctfshow里，并且已经new给变量`$ctfshow`了
+可以直接输出`$ctfshow`的值：
 
 ```
 ?v1=1&v2=var_dump($ctfshow)?>&v3=;
@@ -674,11 +674,11 @@ echo "your are good".$flag."\n";
 die($suces);
 ```
 
-$$可变变量覆盖
-三个变量：$erroe(不可get赋给key)、$flag(不可post赋给value)、$suces
+`$$可变变量覆盖`
+三个变量：`$erroe`(不可get赋给key)、`$flag`(不可post赋给value)、`$suces`
 两种思路：
 
-die($erroe)
+`die($erroe)`
 
 把flag的值借助中间变量suces赋给error就行
 `$error=$suces=$flag`
@@ -690,7 +690,7 @@ POST:
 error=suces
 ```
 
-die($suces)
+`die($suces)`
 
 把flag的值赋给suces，`$suces=$flag`
 post传入`flag=`,那么`$_POST['flag']=$flag=NULL`
@@ -1051,11 +1051,11 @@ CTF_SHOW=&CTF[SHOW.COM=&fun=highlight_file($_GET[1])
 > 2、web网页模式下
 >
 > 	在web页模式下必须在php.ini开启register_argc_argv配置项
-> 												
+> 													
 > 	设置register_argc_argv = On(默认是Off)，重启服务，$_SERVER[‘argv’]才会有效果
-> 												
+> 													
 > 	这时候的$_SERVER[‘argv’][0] = $_SERVER[‘QUERY_STRING’]
-> 												
+> 													
 > 	$argv,$argc在web模式下不适用
 
 > 官方文档：[PHP: $_SERVER - Manual](https://www.php.net/manual/zh/reserved.variables.server)
