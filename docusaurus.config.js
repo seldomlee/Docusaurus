@@ -109,35 +109,35 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        // docs: {
-        //   sidebarCollapsible: true, //默认折叠
-        //   routeBasePath: "/",
-        //   sidebarPath: require.resolve("./sidebars.js"),
-        //   showLastUpdateAuthor: false,
-        //   showLastUpdateTime: false,
-        //   editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
-        //   remarkPlugins: [math],
-        //   rehypePlugins: [katex],
-        // },
-        // blog: {
-        //   //blogTitle: 'Power\'s blog!',
-        //   //blogDescription: 'A docusaurus powered blog!',
-        //   blogSidebarCount: 8,
-        //   postsPerPage: 8,
-        //   showReadingTime: false,
-        //   path: 'blog',
-        //   blogSidebarTitle: 'Recent',
-        //   editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
-          
-        //   feedOptions: {
-        //     type: 'all', // required. 'rss' | 'feed' | 'all'
-        //     title: 'Power\'s Blog', // default to siteConfig.title
-        //     description: '个人博客', // default to  `${siteConfig.title} Blog`
-        //     copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
-        //     language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
-        //   },
-          
-        // },
+        docs: {
+          sidebarCollapsible: true, //默认折叠
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
+          editUrl: "https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/",
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+        },
+        blog: {
+          //blogTitle: 'Power\'s blog!',
+          //blogDescription: 'A docusaurus powered blog!',
+          blogSidebarCount: 8,
+          postsPerPage: 8,
+          showReadingTime: false,
+          path: 'blog',
+          blogSidebarTitle: 'Recent',
+          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          /*
+          feedOptions: {
+            type: 'all', // required. 'rss' | 'feed' | 'all'
+            title: 'Power\'s Blog', // default to siteConfig.title
+            description: '个人博客', // default to  `${siteConfig.title} Blog`
+            copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
+            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+          },
+          */
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
