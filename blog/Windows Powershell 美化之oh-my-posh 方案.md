@@ -1,14 +1,11 @@
 ---
-title: Windows Powershell美化之oh-my-posh的配置经历
-date: 2021-11-03 19:32:30
-author: Na0H
-headimg: /img/atimg/powshell.png
-tags:	
-- 配置
-categories:
-- 配置
-excerpt: Windows Powershell美化之oh-my-posh的配置经历
-description:  Windows Powershell美化之oh-my-posh的配置经历
+slug: windows-powershell-pretty                   # 访问此篇博客时的 url
+title: Windows Powershell美化之oh-my-posh的配置经历                    # 博客标题
+author: Na0H                        # 作者
+author_title: 学徒	               # 作者的标签
+author_url:https://na0h.cn/        # 作者的网址
+author_image_url:https://na0h.cn/img/avatar.jpg                  # 作者头像的链接
+tags: [blog, docusaurus]           # 标签
 
 ---
 
