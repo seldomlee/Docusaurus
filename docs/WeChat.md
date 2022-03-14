@@ -3,4 +3,4 @@ id: WeChat
 title: WeChat
 ---
 
-My WeChat： `linyuxuanlin`
+My WeChat： `NNNNNNa0H`
