@@ -1,40 +1,49 @@
 module.exports = {
   docs: [
     'Home',
+
     {
       type: 'category',
-      label: 'ctfshow',
+      label: 'ctf',
       items: [
-        'ctfshow-xss',
-        'ctfshow-xxe',
-        'ctfshow-jwt',
-        'ctfshow-nodejs',
-        'ctfshow-phpcve',
-        'ctfshow-sql注入',
-        'ctfshow-ssrf',
-        'ctfshow-ssti',
-        'ctfshow-代码审计',
-        'ctfshow-黑盒测试',
-        'ctfshow-其他',
-        'ctfshow-中期测评',
-        'ctfshow-终极考核',
-        'ctfshow-重温php特性',
-        'ctfshow-重温反序列化',
-        'ctfshow-重温命令执行',
-        'ctfshow-8月赛吃瓜杯',
-        'ctfshow-大赛原题（未完）',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'wp',
-      items: [
-        'nssctf-SWPU新生赛web部分',
-        'cnss2021-web部分', // CSDN
-        '复现2020区赛部分web题',
-        '2021极客大挑战-web',
-      ],
-    },
+        {
+          type: 'category',
+          label: 'ctfshow',
+          items: [
+            'ctfshow-xss',
+            'ctfshow-xxe',
+            'ctfshow-jwt',
+            'ctfshow-nodejs',
+            'ctfshow-phpcve',
+            'ctfshow-sql注入',
+            'ctfshow-ssrf',
+            'ctfshow-ssti',
+            'ctfshow-代码审计',
+            'ctfshow-黑盒测试',
+            'ctfshow-其他',
+            'ctfshow-中期测评',
+            'ctfshow-终极考核',
+            'ctfshow-重温php特性',
+            'ctfshow-重温反序列化',
+            'ctfshow-重温命令执行',
+            'ctfshow-8月赛吃瓜杯',
+            'ctfshow-大赛原题（未完）',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'wp',
+          items: [
+            'nssctf-SWPU新生赛web部分',
+            'cnss2021-web部分', // CSDN
+            '复现2020区赛部分web题',
+            '2021极客大挑战-web',
+          ],
+        },
+      ]
+    }
+
+
 
   ],
 };
