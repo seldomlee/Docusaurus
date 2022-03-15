@@ -81,7 +81,7 @@ module.exports = {
       items: [
       {
           to: "blog",
-          label: "博客",
+          label: "about",
           position: "right",
         },
         // {
