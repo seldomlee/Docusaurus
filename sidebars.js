@@ -3,6 +3,15 @@ module.exports = {
     'Home',
     {
       type: 'category',
+      label: '配置',
+      items: [
+        '在华为云配置kali-linux',
+        'Windows Powershell美化',
+      ]
+    },
+
+    {
+      type: 'category',
       label: 'ctf',
       items: [
         {
@@ -32,6 +41,19 @@ module.exports = {
         },
         {
           type: 'category',
+          label: '靶场/靶机',
+          items: [
+            '搭建vulhub',
+            '织梦cms、帝国cms的搭建及漏洞复现',
+            'Pikachu靶场通关小记',
+            'upload-labs靶场通关小记',
+            'xss-lab通关小记',
+            'ctfhub-ssrf',
+            'VulnStack1',
+          ],
+        },
+        {
+          type: 'category',
           label: 'wp',
           items: [
             '学校ctf训练赛的wp',
@@ -43,26 +65,29 @@ module.exports = {
             '长安杯线上赛高校组',
           ],
         },
-        {
-          type: 'category',
-          label: '靶场/靶机',
-          items: [
-            'Pikachu靶场通关小记',
-            'upload-labs靶场通关小记',
-            'xss-lab通关小记',
-            'ctfhub-ssrf',
-          ],
-        },
         'sql注入的一些基操',
         '随便注和blacklist',
         '学习正则表达式的一些笔记',
         '禁用数组-sha1强比较绕过',
         'php伪协议的学习',
         'web小记',
-
       ]
-    }
-
+    },    
+    {
+      type: 'category',
+      label: '其他',
+      items: [
+        {
+          type: 'category',
+          label: '课程学习',
+          items: [
+            'python实现——银行家算法、死锁检测与解除、动态内存分配',
+            '停车场管理系统-flask',
+          ],
+        },
+        '',
+      ]
+    },
 
 
   ],
