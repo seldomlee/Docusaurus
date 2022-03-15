@@ -35,7 +35,6 @@ module.exports = {
             'ctfshow-重温php特性',
             'ctfshow-重温反序列化',
             'ctfshow-重温命令执行',
-            
             'ctfshow-大赛原题（未完）',
           ],
         },
