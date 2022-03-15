@@ -79,16 +79,16 @@ module.exports = {
       },
       */
       items: [
-      {
+        {
+          href: "https://na0h.cn/",
+          label: "博客",
+          position: "right",
+        },
+        {
           to: "blog",
           label: "about",
           position: "right",
         },
-        // {
-        //   href: "http://digest.wiki-power.com/",
-        //   label: "书摘",
-        //   position: "right",
-        // },
         // {
         //   href: "https://nav.wiki-power.com/",
         //   label: "友链 & 导航站",
