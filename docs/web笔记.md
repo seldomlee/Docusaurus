@@ -1,6 +1,6 @@
 ---
-title: 新web小记
-id: 新web小记
+title: web小记
+id: web小记
 ---
 
 <!-- more -->
