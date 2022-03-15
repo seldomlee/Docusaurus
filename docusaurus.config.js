@@ -4,12 +4,12 @@ const katex = require('rehype-katex');
 module.exports = {
   title: "Na0H's Wiki",
   //titleDelimiter: "🦖", // Defaults to `|`
-  tagline: "^_^",
+  tagline: "",
   url: "https://docusaurus-dusky.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: 'img/favicon.ico',
+  favicon: "img/favicon.ico",
   //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
   //projectName: "Wiki_Docusaurus", // Usually your repo name.
   themeConfig: {
@@ -78,7 +78,8 @@ module.exports = {
           "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
       },
       */
-      items: [{
+      items: [
+      {
           to: "blog",
           label: "博客",
           position: "right",
