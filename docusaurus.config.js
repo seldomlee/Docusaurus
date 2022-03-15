@@ -3,15 +3,15 @@ const katex = require('rehype-katex');
 
 module.exports = {
   title: "Na0H's Wiki",
-  //titleDelimiter: "🦖", // Defaults to `|`
+  //titleDelimiter: "a", // Defaults to `|`
   tagline: "",
   url: "https://docusaurus-dusky.vercel.app",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  //organizationName: "linyuxuanlin", // Usually your GitHub org/user name.
-  //projectName: "Wiki_Docusaurus", // Usually your repo name.
+  //organizationName: "seldomlee", // Usually your GitHub org/user name.
+  //projectName: "Docusaurus", // Usually your repo name.
   themeConfig: {
     /*
         footer: {

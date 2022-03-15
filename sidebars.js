@@ -1,7 +1,6 @@
 module.exports = {
   docs: [
     'Home',
-
     {
       type: 'category',
       label: 'ctf',
@@ -10,6 +9,7 @@ module.exports = {
           type: 'category',
           label: 'ctfshow',
           items: [
+            'ctfshow-misc入门',
             'ctfshow-xss',
             'ctfshow-xxe',
             'ctfshow-jwt',
@@ -26,7 +26,7 @@ module.exports = {
             'ctfshow-重温php特性',
             'ctfshow-重温反序列化',
             'ctfshow-重温命令执行',
-            'ctfshow-8月赛吃瓜杯',
+            
             'ctfshow-大赛原题（未完）',
           ],
         },
@@ -34,12 +34,33 @@ module.exports = {
           type: 'category',
           label: 'wp',
           items: [
-            'nssctf-SWPU新生赛web部分',
-            'cnss2021-web部分', // CSDN
+            '学校ctf训练赛的wp',
             '复现2020区赛部分web题',
+            'nssctf-SWPU新生赛web部分',
+            'cnss2021-web部分',
             '2021极客大挑战-web',
+            'ctfshow-8月赛吃瓜杯',
+            '长安杯线上赛高校组',
           ],
         },
+        {
+          type: 'category',
+          label: '靶场/靶机',
+          items: [
+            'Pikachu靶场通关小记',
+            'upload-labs靶场通关小记',
+            'xss-lab通关小记',
+            'ctfhub-ssrf',
+          ],
+        },
+        'sql注入的一些基操',
+        '随便注|blacklist',
+        '学习正则表达式的一些笔记',
+        '禁用数组-sha1强比较绕过',
+        'php伪协议的学习',
+        'web知识小记(old)',
+        '新web小记',
+
       ]
     }
 

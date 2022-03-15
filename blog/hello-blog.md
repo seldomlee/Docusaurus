@@ -1,5 +1,5 @@
 ---
-title: Hello world
+title: about me
 tags: []
 ---
 
@@ -15,17 +15,3 @@ tags: []
 > 在抄近路的过程中，人又容易迷失真相，做事的干劲也会逐渐消磨殆尽
 > 我认为最重要的是想要「追求真实」的意志。
 > "**
-
-
-
-> ## 友链
->
-> - [beiwo](https://www.cnblogs.com/wkzb/)
-> - [Morouu](https://morblog.cc/)
-> - [llllll7](http://lyxx.link/)
-> - [hututu-w](https://hututu-w.github.io/)
-> - [夜孤城](https://gutoom.github.io/)
-> - [th0me](https://th0me.github.io)
-> - [wx_x](https://wxx0105.github.io/)
-> - [lbj](https://ppbblbj.github.io/)
-> - [water](https://water1120.github.io/)
