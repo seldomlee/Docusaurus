@@ -3,8 +3,8 @@ title: Hello world
 tags: []
 ---
 
-一个在校大学生<br>
-想实现人生理想<br>
+一个在校大学生
+想实现人生理想
 然后回老家结婚
 
 <!--truncate-->
