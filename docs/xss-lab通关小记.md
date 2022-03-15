@@ -43,7 +43,7 @@ GET型,输入`<script>alert(/hack11/)</script>`：
 ## Level3
 
 Value同2，value="">
-`<script>alert(/hack11/)</script>`,查看响应，后端将<>过滤了
+`<script>alert(/hack11/)</script>`,查看响应，后端将`<>`过滤了
 ![](https://i.loli.net/2021/02/13/IBsk2vCh5fR4oFD.png)
 
 查看源码，使用了htmlspecialchars函数

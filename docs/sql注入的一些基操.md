@@ -489,7 +489,7 @@ ord(str): 如果字符串str句首是单字节返回与ascii()函数返回的相
 #### 空格过滤绕过注入
 
 - 适用于空格被置换为空的情况，除了sql注入，很多地方都有这样的WAF
-- bypass：
+- bypass:
 
 ```sql
 ()
@@ -550,7 +550,7 @@ mysql> select * from table1 where name like "test%";
 - `!<>` 
   `<>`相当于`!=`，所有`!<>`就相当于`=`
 
-#### <>过滤绕过
+#### `<>`过滤绕过
 
 ```sql
 `greatest(n1, n2,…)`:返回n中的最大值
