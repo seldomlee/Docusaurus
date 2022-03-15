@@ -9,7 +9,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "https://i.loli.net/2021/08/05/gcTRAN1mEZLtjP2.png",
   //organizationName: "seldomlee", // Usually your GitHub org/user name.
   //projectName: "Docusaurus", // Usually your repo name.
   themeConfig: {
