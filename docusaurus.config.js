@@ -125,8 +125,8 @@ module.exports = {
           blogSidebarCount: 8,
           postsPerPage: 8,
           showReadingTime: false,
-          path: 'blog',
-          blogSidebarTitle: 'Recent',
+          path: 'about',
+          blogSidebarTitle: 'about',
           editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
           /*
           feedOptions: {
