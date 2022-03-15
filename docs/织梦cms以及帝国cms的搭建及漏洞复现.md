@@ -344,57 +344,57 @@ elseif($enews=="LoadInMod")
 
 查看LoadInMod函数（/e/class/moddofun.php）：
 
-<details>
-	<summary>LoadInMod函数</summary>
-	<pre><codes>
-	function LoadInMod($add,$file,$file_name,$file_type,$file_size,$userid,$username){
-	global $empire,$dbtbpre,$ecms_config;
-	//验证权限
-	CheckLevel($userid,$username,$classid,"table");
-	$tbname=RepPostVar(trim($add['tbname']));
-	if(!$file_name||!$file_size||!$tbname)
-	{
-		printerror("EmptyLoadInMod","");
-	}
-	//扩展名
-	$filetype=GetFiletype($file_name);
-	if($filetype!=".mod")
-	{
-		printerror("LoadInModMustmod","");
-	}
-	//表名是否已存在
-	$num=$empire->gettotal("select count(*) as total from {$dbtbpre}enewstable where tbname='$tbname' limit 1");
-	if($num)
-	{
-		printerror("HaveLoadInTb","");
-	}
-	//上传文件
-	$path=ECMS_PATH."e/data/tmp/mod/uploadm".time().make_password(10).".php";
-    #使用make_password(10)对时间进行加密最终拼接成为文件名
-	$cp=@move_uploaded_file($file,$path);
-	if(!$cp)
-	{
-		printerror("EmptyLoadInMod","");
-	}
-	DoChmodFile($path);
-    @include($path);#这里将$path指代的文件包含了，由此可以构造php进行文件操作让他帮我们写shell
-    UpdateTbDefMod($tid,$tbname,$mid);
-    //公共变量
-    TogSaveTxtF(1);
-    GetConfig(1);//更新缓存
-    //生成模型表单文件
-    $modr=$empire->fetch1("select mtemp,qmtemp,cj from {$dbtbpre}enewsmod where mid='$mid'");
-    ChangeMForm($mid,$tid,$modr[mtemp]);//更新表单
-    ChangeQmForm($mid,$tid,$modr[qmtemp]);//更新前台表单
-    ChangeMCj($mid,$tid,$modr[cj]);//采集表单
-    //删除文件
-    DelFiletext($path);
-    //操作日志
-    insert_dolog("tid=$tid&tb=$tbname<br>mid=$mid");
-    printerror("LoadInModSuccess","db/ListTable.php".hReturnEcmsHashStrHref2(1));
-    }
-    </codes></pre>
-</details>
+LoadInMod函数
+
+```
+function LoadInMod($add,$file,$file_name,$file_type,$file_size,$userid,$username){
+global $empire,$dbtbpre,$ecms_config;
+//验证权限
+CheckLevel($userid,$username,$classid,"table");
+$tbname=RepPostVar(trim($add['tbname']));
+if(!$file_name||!$file_size||!$tbname)
+{
+	printerror("EmptyLoadInMod","");
+}
+//扩展名
+$filetype=GetFiletype($file_name);
+if($filetype!=".mod")
+{
+	printerror("LoadInModMustmod","");
+}
+//表名是否已存在
+$num=$empire->gettotal("select count(*) as total from {$dbtbpre}enewstable where tbname='$tbname' limit 1");
+if($num)
+{
+	printerror("HaveLoadInTb","");
+}
+//上传文件
+$path=ECMS_PATH."e/data/tmp/mod/uploadm".time().make_password(10).".php";
+#使用make_password(10)对时间进行加密最终拼接成为文件名
+$cp=@move_uploaded_file($file,$path);
+if(!$cp)
+{
+	printerror("EmptyLoadInMod","");
+}
+DoChmodFile($path);
+@include($path);#这里将$path指代的文件包含了，由此可以构造php进行文件操作让他帮我们写shell
+UpdateTbDefMod($tid,$tbname,$mid);
+//公共变量
+TogSaveTxtF(1);
+GetConfig(1);//更新缓存
+//生成模型表单文件
+$modr=$empire->fetch1("select mtemp,qmtemp,cj from {$dbtbpre}enewsmod where mid='$mid'");
+ChangeMForm($mid,$tid,$modr[mtemp]);//更新表单
+ChangeQmForm($mid,$tid,$modr[qmtemp]);//更新前台表单
+ChangeMCj($mid,$tid,$modr[cj]);//采集表单
+//删除文件
+DelFiletext($path);
+//操作日志
+insert_dolog("tid=$tid&tb=$tbname<br>mid=$mid");
+printerror("LoadInModSuccess","db/ListTable.php".hReturnEcmsHashStrHref2(1));
+}
+```
+
 
 
 关键代码分析如下（因为代码太长了==就截图出来）
