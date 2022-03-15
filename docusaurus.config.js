@@ -66,7 +66,7 @@ module.exports = {
       },
     },
 
-    hideableSidebar: false,
+    hideableSidebar: true,
     navbar: {
       title: "Na0H's Wiki",
       hideOnScroll: false,
@@ -131,7 +131,7 @@ module.exports = {
           /*
           feedOptions: {
             type: 'all', // required. 'rss' | 'feed' | 'all'
-            title: 'Power\'s Blog', // default to siteConfig.title
+            title: 'Na0H\'s Blog', // default to siteConfig.title
             description: '个人博客', // default to  `${siteConfig.title} Blog`
             copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
             language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
