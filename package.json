@@ -12,6 +12,9 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
+    "prismjs": ">=1.27.0",
+    "trim": ">=0.0.3",
+    "nth-check": ">=2.0.1",
     "@docsearch/react": "^3.0.0-alpha.50",
     "@docusaurus/core": "^2.0.0-beta.14",
     "@docusaurus/mdx-loader": "^2.0.0-beta.14",
@@ -23,9 +26,6 @@
     "react-dom": "^16.8.4",
     "rehype-katex": "^4.0.0",
     "remark-math": "^3.0.1"
-    "prismjs": ">=1.27.0",
-    "trim": ">=0.0.3",
-    "nth-check": ">=2.0.1"
   },
   "browserslist": {
     "production": [
