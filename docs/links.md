@@ -1,8 +1,6 @@
 ---
 id: links
 title: 友链
-sidebar_label: links
-slug: /
 ---
 
 > ## 友链
