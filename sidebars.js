@@ -54,7 +54,7 @@ module.exports = {
           ],
         },
         'sql注入的一些基操',
-        '随便注|blacklist',
+        '随便注和blacklist',
         '学习正则表达式的一些笔记',
         '禁用数组-sha1强比较绕过',
         'php伪协议的学习',

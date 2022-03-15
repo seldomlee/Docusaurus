@@ -1,6 +1,6 @@
 ---
 title: 随便注|blacklist => 的一些知识
-id: 随便注|blacklist
+id: 随便注和blacklist
 ---
 
 <!-- more -->
