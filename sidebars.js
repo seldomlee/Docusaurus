@@ -67,7 +67,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'knowledge',
+          label: '学习笔记',
           items: [
             'sql注入的一些基操',
             '随便注和blacklist',
@@ -94,8 +94,7 @@ module.exports = {
         },
       ]
     },
-
-
+    'links',
   ],
 };
 

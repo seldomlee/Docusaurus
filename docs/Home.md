@@ -16,19 +16,6 @@ slug: /
 用于记录学习到的东东，请随意观看~
 
 
-> ## 友链
->
-> - [beiwo](https://www.cnblogs.com/wkzb/)
-> - [Morouu](https://morblog.cc/)
-> - [llllll7](http://lyxx.link/)
-> - [hututu-w](https://hututu-w.github.io/)
-> - [夜孤城](https://gutoom.github.io/)
-> - [th0me](https://th0me.github.io)
-> - [wx_x](https://wxx0105.github.io/)
-> - [lbj](https://ppbblbj.github.io/)
-> - [water](https://water1120.github.io/)
-
-
 [![GitHub deployments](https://img.shields.io/github/deployments/linyuxuanlin/Wiki_Docusaurus/Production?label=Build&style=flat-square)](https://vercel.com/seldomlee/docusaurus/deployments)
 [![contact](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
