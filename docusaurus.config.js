@@ -70,7 +70,7 @@ module.exports = {
     hideableSidebar: true,
     navbar: {
       title: "Na0H's Wiki",
-      hideOnScroll: false,
+      hideOnScroll: true,
       //style: 'primary',
       /*
       logo: {
