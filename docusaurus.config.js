@@ -81,13 +81,13 @@ module.exports = {
       */
       items: [
         {
-          href: "https://na0h.cn/",
-          label: "博客",
+          to: "blog",
+          label: "about",
           position: "right",
         },
         {
-          to: "blog",
-          label: "about",
+          href: "https://na0h.cn/",
+          label: "博客",
           position: "right",
         },
         // {
