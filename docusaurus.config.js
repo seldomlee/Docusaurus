@@ -119,8 +119,8 @@ module.exports = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
-        blog: {
-          //blogTitle: 'Na0H\'s blog!',
+        about: {
+          //blogTitle: 'Na0H\'s about!',
           //blogDescription: '',
           blogSidebarCount: 8,
           postsPerPage: 8,
