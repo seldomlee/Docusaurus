@@ -86,7 +86,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "about",
+          to: "blog",
           label: "about",
           position: "right",
         },
@@ -120,13 +120,13 @@ module.exports = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
-        about: {
-          //blogTitle: 'Na0H\'s about!',
+        blog: {
+          //blogTitle: 'Na0H\'s blog!',
           //blogDescription: '',
           blogSidebarCount: 8,
           postsPerPage: 8,
           showReadingTime: false,
-          path: 'about',
+          path: 'blog',
           blogSidebarTitle: 'about',
           editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
           /*
