@@ -87,6 +87,13 @@ module.exports = {
       items: [
         {
           type: 'category',
+          label: 'java',
+          items: [
+            '走进java',
+          ],
+        },
+        {
+          type: 'category',
           label: '课程学习',
           items: [
             'python实现——银行家算法、死锁检测与解除、动态内存分配',

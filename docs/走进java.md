@@ -1,17 +1,16 @@
 ---
-id: java学习
-title: java学习
+id: 走进java
+title: 走进java
 ---
 
+## 前言
 
 
 
+记一下java一些基本知识，
+语法和之前学过的语言类似，就不作记录了
 
-
-
-## java基础
-
-### Java的平台无关性
+## Java的平台无关性
 
 - java是一门跨平台语言，具有平台无关性；主要原因是JVM——Java 虚拟机(Java Virtual Machine)![](https://s2.loli.net/2022/03/18/7jaZILCOPWxuNo3.png)
 
@@ -21,7 +20,7 @@ title: java学习
 
 
 
-### Java中的JVM、JRE和JDk三者的区别和联系
+## Java中的JVM、JRE和JDk三者的区别和联系
 
 - **JRE**：(Java Runtime Environment，Java运行环境)，是运行 JAVA 程序所必须的环境的集合，**包含 JVM 标准实现及 Java 核心类库**（不同的操作系统有自己的JRE）
 
@@ -47,7 +46,7 @@ title: java学习
 
 
 
-### Java的各大版本
+## Java的各大版本
 
 - Java ME：微缩版的Java，基本无人使用了
 - Java SE：标准版的Java，是整个java的核心
@@ -57,7 +56,21 @@ title: java学习
 
 ## Java运行机制
 
+- 编译型语言即像c语言一样要编译成系统认识的二进制序列即机器语言
+  解释型语言不需要编译，像python，会将源代码交给解释器来告诉系统应该如何运行
+
+- 而java是特殊的解释型语言，其也需要编译，但不是直接编译为机器语言，而是编译为字节码文件，再交由JVM以解释方式执行（感觉是为了实现跨平台）
+
+  
+
+- 源程序.java文件经过Java编译器编译为字节码.class文件，
+  再由jvm将字节码.class文件解释给操作系统从而运行
+
+  ![](https://s2.loli.net/2022/03/18/1GqymeiclMKBpt3.png)
 
 
-java程序运行于jvm上，需要编译
+
+
+
+
 
