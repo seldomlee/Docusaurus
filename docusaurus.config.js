@@ -86,7 +86,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://na0h.cn/",
+          href: "https://bloghexo-seldomlee.vercel.app/",
           label: "博客",
           position: "right",
         },
