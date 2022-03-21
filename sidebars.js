@@ -8,6 +8,8 @@ module.exports = {
         '在华为云配置kali-linux',
         'Windows Powershell美化',
         'PHPStudy+VSCode Xdebug调试配置',
+        '将VulScanner配置在linux服务器下',
+
       ]
     },
 

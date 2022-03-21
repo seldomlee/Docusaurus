@@ -30,15 +30,13 @@ title: 走进java
 
   
 
-- ![](https://s2.loli.net/2022/03/18/s7bCFwuQt5NrMnR.png)
+  ![](https://s2.loli.net/2022/03/18/s7bCFwuQt5NrMnR.png)
 
   
 
   ![](https://s2.loli.net/2022/03/18/5yYpV4RuDQMk6fO.png)
 
 简单来说：
-
-- 
 
 - JDK = JRE + 多种Java开发工具
 - JRE = JVM + 各种类库
