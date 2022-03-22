@@ -85,11 +85,11 @@ module.exports = {
           label: "about",
           position: "right",
         },
-        {
-          href: "https://bloghexo-seldomlee.vercel.app/",
-          label: "博客",
-          position: "right",
-        },
+        // {
+        //   href: "https://bloghexo-seldomlee.vercel.app/",
+        //   label: "博客",
+        //   position: "right",
+        // },
         // {
         //   href: "https://nav.wiki-power.com/",
         //   label: "友链 & 导航站",
