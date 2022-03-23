@@ -83,18 +83,18 @@ module.exports = {
         {
           to: "blog",
           label: "about",
-          position: "right",
+          position: "left",
         },
         // {
         //   href: "https://bloghexo-seldomlee.vercel.app/",
         //   label: "博客",
         //   position: "right",
         // },
-        // {
-        //   href: "https://nav.wiki-power.com/",
-        //   label: "友链 & 导航站",
-        //   position: "right",
-        // },
+        {
+          href: "https://github.com/seldomlee",
+          src: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          position: "right",
+        },
       ],
     },
   },
