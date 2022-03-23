@@ -129,8 +129,8 @@ module.exports = {
           //blogDescription: '',
           //blogSidebarCount: 8,
           //postsPerPage: 8,
-          showReadingTime: false,
-          path: 'blog',
+          showReadingTime: true,
+          //path: 'blog',
           //blogSidebarTitle: 'about',
           editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
           /*
