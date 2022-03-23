@@ -86,7 +86,7 @@ module.exports = {
       items: [
         {
           to: "blog",
-          label: "about",
+          label: "👨🏻‍💻about",
           position: "right",
         },
         // {
@@ -118,8 +118,8 @@ module.exports = {
           sidebarCollapsible: true, //默认折叠
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           editUrl: "https://github.com/seldomlee/Docusaurus/edit/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
@@ -127,11 +127,11 @@ module.exports = {
         blog: {
           //blogTitle: 'Na0H\'s blog!',
           //blogDescription: '',
-          blogSidebarCount: 8,
-          postsPerPage: 8,
+          //blogSidebarCount: 8,
+          //postsPerPage: 8,
           showReadingTime: false,
           path: 'blog',
-          blogSidebarTitle: 'about',
+          //blogSidebarTitle: 'about',
           editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
           /*
           feedOptions: {
