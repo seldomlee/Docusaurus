@@ -92,7 +92,7 @@ module.exports = {
         // },
         {
           href: "https://github.com/seldomlee",
-          src: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          label: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
           position: "right",
         },
       ],
