@@ -10,9 +10,6 @@ module.exports = {
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://bloghexo-seldomlee.vercel.app/img/favicon.ico",
-  //https://i.loli.net/2021/08/05/gcTRAN1mEZLtjP2.png
-  //organizationName: "seldomlee", // Usually your GitHub org/user name.
-  //projectName: "Docusaurus", // Usually your repo name.
   themeConfig: {
     /*
         footer: {
@@ -36,8 +33,6 @@ module.exports = {
     },
 
 
-
-
     colorMode: {
       // "light" | "dark"
       //defaultMode: "dark",
@@ -49,18 +44,9 @@ module.exports = {
         // Icon for the switch while in dark mode
         darkIcon: '🌙',
         lightIcon: '🌞',
-
-        // CSS to apply to dark icon,
-        // React inline style object
-        // see https://reactjs.org/docs/dom-elements.html#style
         darkIconStyle: {
           marginLeft: "2px",
         },
-
-        // Unicode icons such as '\u2600' will work
-        // Unicode with 5 chars require brackets: '\u{1F602}'
-        //lightIcon: '\u{1F602}',
-
         lightIconStyle: {
           marginLeft: "1px",
         },
@@ -71,14 +57,6 @@ module.exports = {
     navbar: {
       title: "Na0H's Wiki",
       hideOnScroll: true,
-      //style: 'primary',
-      /*
-      logo: {
-        alt: "My Site Logo",
-        src:
-          "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
-      },
-      */
       logo: {
         alt: 'My Site Logo',
         src: "https://bloghexo-hdltzafy7-seldomlee.vercel.app/img/avatar.jpg",
@@ -129,6 +107,7 @@ module.exports = {
           //blogDescription: '',
           //blogSidebarCount: 8,
           //postsPerPage: 8,
+          blogSidebarCount: 0
           showReadingTime: true,
           //path: 'blog',
           //blogSidebarTitle: 'about',
