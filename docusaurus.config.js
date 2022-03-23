@@ -79,6 +79,10 @@ module.exports = {
           "https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/20201122195819.png",
       },
       */
+      logo: {
+        alt: 'My Site Logo',
+        src: "https://bloghexo-seldomlee.vercel.app/img/favicon.ico",
+      },
       items: [
         {
           to: "blog",
@@ -90,11 +94,11 @@ module.exports = {
         //   label: "博客",
         //   position: "right",
         // },
-        {
-          href: "https://github.com/seldomlee",
-          label: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-          position: "right",
-        },
+        // {
+        //   href: "https://github.com/seldomlee",
+        //   label: "github",
+        //   position: "right",
+        // },
       ],
     },
   },
