@@ -81,7 +81,7 @@ module.exports = {
       */
       logo: {
         alt: 'My Site Logo',
-        src: "https://bloghexo-seldomlee.vercel.app/img/favicon.ico",
+        src: "https://bloghexo-hdltzafy7-seldomlee.vercel.app/img/avatar.jpg",
       },
       items: [
         {
