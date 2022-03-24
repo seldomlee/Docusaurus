@@ -96,7 +96,7 @@ module.exports = {
           sidebarCollapsible: true, //默认折叠
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           editUrl: "https://github.com/seldomlee/Docusaurus/edit/main/",
           remarkPlugins: [math],
