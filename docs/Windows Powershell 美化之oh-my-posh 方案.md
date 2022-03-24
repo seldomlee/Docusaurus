@@ -54,7 +54,7 @@ id: Windows Powershell美化
 Install-Module oh-my-posh -Scope CurrentUser
 ```
 
-安装完成后，用这个命令查看所有主题
+安装完成后，用这个命令查看所有主题（可以点击主题名前往其路径）
 
 ```powershell
 Get-PoshThemes
@@ -84,5 +84,149 @@ Set-PoshPrompt -Theme 主题名称
 这样就设置完成了，是不是非常简单呢，来试试看吧
 
 ![](https://i.loli.net/2021/11/03/c8VIQCiLrnZJTyS.jpg)
+
+
+
+下面附上我自用的配置：
+
+![](https://s2.loli.net/2022/03/24/wGSlWd8nBPpEeQs.png)
+
+```
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#a313a8",
+          "foreground": "#FFEB3B",
+          "properties": {
+            "template": "\u26a1 "
+          },
+          "style": "plain",
+          "type": "root"
+        },
+        {
+          "background": "transparent",
+          "foreground": "#ffffff",
+          "properties": {
+            "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+          },
+          "style": "plain",
+          "type": "os"
+        },
+        {
+          "background": "#01579B",
+          "foreground": "#ffffff",
+          "leading_diamond": "<transparent,#01579B>\ue0b0</>",
+          "properties": {
+            "folder_icon": "\uf6d7",
+            "folder_separator_icon": "<transparent> \ue0bd </>",
+            "home_icon": "\uf7db",
+            "style": "agnoster_short",
+            "template": " {{ .Path }} "
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "type": "path"
+        },
+        {
+          "background": "#00C853",
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFEB3B{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFCC80{{ end }}",
+            "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
+            "{{ if gt .Behind 0 }}#B388FF{{ end }}"
+          ],
+          "foreground": "#000000",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "template": " {{ .HEAD }}{{ if .Staging.Changed }}<#FF6F00> \uf046 {{ .Staging.String }}</>{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} "
+          },
+          "style": "powerline",
+          "type": "git"
+        },
+        {
+          "background": "#49404f",
+          "foreground": "#ffffff",
+          "leading_diamond": "<transparent,#49404f>\ue0b0</>",
+          "properties": {
+            "style": "dallas",
+            "template": " {{ .FormattedMs }}s ",
+            "threshold": 0
+          },
+          "style": "diamond",
+          "trailing_diamond": "\ue0b0",
+          "type": "executiontime"
+        },
+        {
+          "background": "#910000",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "template": "<transparent> \uf12a</> {{ .Meaning }} "
+          },
+          "style": "powerline",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "background": "#29315A",
+          "foreground": "#43CCEA",
+          "leading_diamond": "\ue0c5",
+          "properties": {
+            "template": "  {{ .UserName }}<transparent> / </>{{ .HostName }}"
+          },
+          "style": "diamond",
+          "type": "session"
+        },
+        {
+          "background": "#29315A",
+          "foreground": "#3EC669",
+          "properties": {
+            "template": "<transparent> \ue0ba\ue0bc </>{{ .CurrentDate | date .Format }} ",
+            "time_format": "15:04:05"
+          },
+          "style": "plain",
+          "type": "time"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#ffffff",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ff0000{{ end }}"
+          ],
+          "properties": {
+            "always_enabled": true,
+            "template": "\u276f "
+          },
+          "style": "plain",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{.Folder | replace \"~\" \"🏚\" }} @ {{.HostName}}",
+  "osc99": true,
+  "version": 1
+}
+```
+
+
 
 又水一篇博客，我应该把配置wsl踩的坑也一起丢上来！
