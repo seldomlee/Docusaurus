@@ -126,6 +126,7 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        //生成sitemap.xml，可访问url/sitemap.xml
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
