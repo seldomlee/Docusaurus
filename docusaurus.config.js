@@ -97,7 +97,7 @@ module.exports = {
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: false,
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           editUrl: "https://github.com/seldomlee/Docusaurus/edit/main/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
@@ -125,6 +125,10 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
         },
       },
     ],
