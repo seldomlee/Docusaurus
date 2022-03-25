@@ -103,25 +103,9 @@ module.exports = {
           rehypePlugins: [katex],
         },
         blog: {
-          //blogTitle: 'Na0H\'s blog!',
-          //blogDescription: '',
-          //blogSidebarCount: 8,
-          //postsPerPage: 8,
-
           showReadingTime: true,
           blogSidebarCount: 0,
-          //path: 'blog',
-          //blogSidebarTitle: 'about',
           editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
-          /*
-          feedOptions: {
-            type: 'all', // required. 'rss' | 'feed' | 'all'
-            title: 'Na0H\'s Blog', // default to siteConfig.title
-            description: '个人博客', // default to  `${siteConfig.title} Blog`
-            copyright: 'Copyright © ${new Date().getFullYear()} Power Lin',
-            language: undefined, // possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
-          },
-          */
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
