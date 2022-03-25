@@ -137,11 +137,11 @@ const config = {
             label: "👨🏻‍💻about",
             position: "right",
           },
-        // {
-        //   href: "https://bloghexo-seldomlee.vercel.app/",
-        //   label: "博客",
-        //   position: "right",
-        // },
+        {
+          href: "https://blog.na0h.cn",
+          label: "📚博客",
+          position: "right",
+        },
         // {
         //   href: "https://github.com/seldomlee",
         //   label: "github",
