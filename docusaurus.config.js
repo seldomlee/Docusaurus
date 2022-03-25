@@ -1,72 +1,142 @@
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: "Na0H's Wiki",
-  //titleDelimiter: "a", // Defaults to `|`
-  tagline: "",
-  url: "https://docusaurus-dusky.vercel.app",
-  baseUrl: "/",
-  onBrokenLinks: "warn",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "https://bloghexo-seldomlee.vercel.app/img/favicon.ico",
-  themeConfig: {
-    /*
-        footer: {
-          
-          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-        },
-        */
-
-    image: 'img/avatar.jpg',
-    algolia: {
-      apiKey: "16b3d7deeb808a05b093ae40cc25b260",
-      indexName: "Z6DQZ749EW",
-
-      // Optional: see doc section bellow
-      contextualSearch: true,
-
-      // Optional: Algolia search parameters
-      searchParameters: {},
-
-      //... other Algolia params
-    },
+  tagline: '',
+  url: 'https://wiki.na0h.cn',
+  baseUrl: '/',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'https://bloghexo-seldomlee.vercel.app/img/favicon.ico',
+  organizationName: 'seldomlee', // Usually your GitHub org/user name.
+  projectName: 'Docusaurus', // Usually your repo name.
 
 
-    colorMode: {
-      // "light" | "dark"
-      //defaultMode: "dark",
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
 
-      // Dark/light switch icon options
-      switchConfig: {
-        // Icon for the switch while in dark mode
-        darkIcon: '🌙',
-        lightIcon: '🌞',
-        darkIconStyle: {
-          marginLeft: "2px",
-        },
-        lightIconStyle: {
-          marginLeft: "1px",
-        },
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["en", "zh"],
+        // ```
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
       },
-    },
+    ],
+  ],
 
-    hideableSidebar: true,
-    navbar: {
-      title: "Na0H's Wiki",
-      hideOnScroll: true,
-      logo: {
-        alt: 'My Site Logo',
-        src: "https://bloghexo-hdltzafy7-seldomlee.vercel.app/img/avatar.jpg",
-      },
-      items: [
-        {
-          to: "blog",
-          label: "👨🏻‍💻about",
-          position: "right",
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        googleAnalytics: {
+          trackingID: 'UA-152900803-1',
+          anonymizeIP: false,
         },
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl: 'https://github.com/seldomlee/Docusaurus/edit/main/',
+          sidebarCollapsible: true, //默认折叠
+          routeBasePath: "/",
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
+          breadcrumbs: false,
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
+        },
+        blog: {
+          showReadingTime: false,
+          editUrl: 'https://github.com/seldomlee/Docusaurus/edit/main/',
+          blogSidebarCount: 0,
+          // blogSidebarCount: 8,
+          // postsPerPage: 8,
+          // path: 'blog',
+          // blogSidebarTitle: 'Recent',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+        //生成sitemap.xml，可访问url/sitemap.xml
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
+      }),
+    ],
+  ],
+
+  stylesheets: [{
+    href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+    type: 'text/css',
+    integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+    crossorigin: 'anonymous',
+  }, ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+/*
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'IRO903CONI',
+
+        // Public API key: it is safe to commit it
+        apiKey: 'defe7fd8690822eed8e3c94801bab286',
+
+        indexName: 'wiki-power',
+
+        // Optional: see doc section below
+        contextualSearch: true,
+
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        //externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Algolia search parameters
+        searchParameters: {},
+
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+
+        //... other Algolia params
+      },*/
+
+      //sidebarCollapsible: true, //默认折叠
+      image: 'img/avatar.jpg',
+      hideableSidebar: true,
+
+
+      navbar: {
+        title: "Na0H's Wiki",
+        hideOnScroll: true,
+
+        logo: {
+          alt: 'My Site Logo',
+          src: "https://bloghexo-hdltzafy7-seldomlee.vercel.app/img/avatar.jpg",
+        },
+
+        items: [        
+          {
+            to: "blog",
+            label: "👨🏻‍💻about",
+            position: "right",
+          },
         // {
         //   href: "https://bloghexo-seldomlee.vercel.app/",
         //   label: "博客",
@@ -77,45 +147,56 @@ module.exports = {
         //   label: "github",
         //   position: "right",
         // },
-      ],
-    },
-  },
-
-  // stylesheets: [{
-  //   href: 'https://cdn.jsdelivr.net/gh/linyuxuanlin/Wiki_Docusaurus/static/katex/v0.12.0/katex.min.css',
-  //   type: 'text/css',
-  //   integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-  //   crossorigin: 'anonymous',
-  // }, ],
-
-  presets: [
-    [
-      "@docusaurus/preset-classic",
-      {
-        docs: {
-          sidebarCollapsible: true, //默认折叠
-          routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
-          editUrl: "https://github.com/seldomlee/Docusaurus/edit/main/",
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
-        },
-        blog: {
-          showReadingTime: true,
-          blogSidebarCount: 0,
-          editUrl: 'https://github.com/seldomlee/Docusaurus/settings/main/',
-        },
-        theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
-        //生成sitemap.xml，可访问url/sitemap.xml
-        sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
-        },
+        ],
       },
-    ],
-  ],
+
+
+      footer: {
+        style: 'light',
+
+
+        links: [
+          
+          {
+            label: 'beiwo',
+            href: 'https://www.cnblogs.com/wkzb/',
+          },
+          {
+            label: 'Morouu',
+            href: 'https://morblog.cc/',
+          },
+          {
+            label: 'llllll7',
+            href: 'http://lyxx.link/',
+          },
+          {
+            label: 'hututu-w',
+            href: 'https://hututu-w.github.io/',
+          },
+          {
+            label: '夜孤城',
+            href: 'https://gutoom.github.io/',
+          },
+          {
+            label: 'th0me',
+            href: 'https://th0me.github.io',
+          },
+          {
+            label: 'wx_x',
+            href: 'https://wxx0105.github.io/',
+          },
+        ],
+
+
+       //copyright: `by Power Lin | 粤 ICP 备 20014898 号 | Built with Docusaurus.`,
+      },
+
+     
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
+
+module.exports = config;

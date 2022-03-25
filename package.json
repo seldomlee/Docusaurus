@@ -12,20 +12,21 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
-    "prismjs": ">=1.27.0",
-    "trim": ">=0.0.3",
-    "nth-check": ">=2.0.1",
     "@docsearch/react": "^3.0.0-alpha.50",
     "@docusaurus/core": "^2.0.0-beta.14",
     "@docusaurus/mdx-loader": "^2.0.0-beta.14",
     "@docusaurus/plugin-content-docs": "^2.0.0-beta.14",
     "@docusaurus/preset-classic": "^2.0.0-beta.14",
     "@docusaurus/plugin-sitemap":"2.0.0-beta.17",
+    "@easyops-cn/docusaurus-search-local": "^0.23.0",
     "@mdx-js/react": "^1.6.21",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "rehype-katex": "^4.0.0",
+    "prismjs": ">=1.27.0",
+    "trim": ">=0.0.3",
+    "nth-check": ">=2.0.1",
     "remark-math": "^3.0.1"
   },
   "browserslist": {
