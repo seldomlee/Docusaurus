@@ -157,34 +157,34 @@ const config = {
 
         links: [
           
-          {
-            label: 'beiwo',
-            href: 'https://www.cnblogs.com/wkzb/',
-          },
-          {
-            label: 'Morouu',
-            href: 'https://morblog.cc/',
-          },
-          {
-            label: 'llllll7',
-            href: 'http://lyxx.link/',
-          },
-          {
-            label: 'hututu-w',
-            href: 'https://hututu-w.github.io/',
-          },
-          {
-            label: '夜孤城',
-            href: 'https://gutoom.github.io/',
-          },
-          {
-            label: 'th0me',
-            href: 'https://th0me.github.io',
-          },
-          {
-            label: 'wx_x',
-            href: 'https://wxx0105.github.io/',
-          },
+          // {
+          //   label: 'beiwo',
+          //   href: 'https://www.cnblogs.com/wkzb/',
+          // },
+          // {
+          //   label: 'Morouu',
+          //   href: 'https://morblog.cc/',
+          // },
+          // {
+          //   label: 'llllll7',
+          //   href: 'http://lyxx.link/',
+          // },
+          // {
+          //   label: 'hututu-w',
+          //   href: 'https://hututu-w.github.io/',
+          // },
+          // {
+          //   label: '夜孤城',
+          //   href: 'https://gutoom.github.io/',
+          // },
+          // {
+          //   label: 'th0me',
+          //   href: 'https://th0me.github.io',
+          // },
+          // {
+          //   label: 'wx_x',
+          //   href: 'https://wxx0105.github.io/',
+          // },
         ],
 
 
