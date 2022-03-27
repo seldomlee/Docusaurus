@@ -58,9 +58,9 @@ aside.theme-doc-sidebar-container.docSidebarContainer_rKC_ {
 }
 
 /* 隐藏 scrollbar */
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   display: none;
-}
+}*/
 
 /* 文字选取颜色 */
 ::selection {
