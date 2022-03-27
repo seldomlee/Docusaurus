@@ -222,7 +222,7 @@ die("虎年大吉，新春快乐！");
 虎年大吉，新春快乐！
 ```
 
-![](https://ctfer-1257200238.cos.ap-shanghai.myqcloud.com/public/attachments/2022/02/04/d2cf6418694b28cf61e50bdb9a21519dc7a123eb.png?sign=q-sign-algorithm%3Dsha1%26q-ak%3DAKIDxjGWVCdngIejX3JI0RaT5QUHn2AIGzRe%26q-sign-time%3D1643977141%3B1644063601%26q-key-time%3D1643977141%3B1644063601%26q-header-list%3Dhost%26q-url-param-list%3D%26q-signature%3Dfcabe323447fb1e0f10c902dbf4913134e77f6a1&&imageMogr2/format/webp/quality/20/interlace/1/ignore-error/1)
+![](https://s2.loli.net/2022/03/27/Ih4H6vfeNcKWGPV.png)
 
 `?1=spl_autoload_extensions`
 
