@@ -88,7 +88,7 @@ cd $ZSH/custom/plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
-### 修改`~/.zshrc`
+### 修改.zshrc
 
 ```
 vim ~/.zshrc
