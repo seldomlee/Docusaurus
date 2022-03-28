@@ -127,3 +127,18 @@ PasswordAuthentication yes
 
 这时候再使用ssh连接就可以了
 
+
+
+
+
+## 更新kali
+
+[更新卡利|Kali Linux Documentation](https://www.kali.org/docs/general-use/updating-kali/)
+
+先确保镜像源没问题，然后：
+
+```sh
+sudo apt update
+sudo apt full-upgrade -y
+```
+
