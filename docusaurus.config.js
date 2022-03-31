@@ -22,21 +22,23 @@ const config = {
 
   themes: [
     // ... Your other themes.
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        language: ["en", "zh"],
-        // ```
-        indexDocs: true,
-        indexBlog: true,
-        indexPages: true,
-      },
-    ],
+
+    // [
+    //   // "@easyops-cn/docusaurus-search-local": "^0.23.0",
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   {
+    //     // ... Your options.
+    //     // `hashed` is recommended as long-term-cache of index file is possible.
+    //     hashed: true,
+    //     // For Docs using Chinese, The `language` is recommended to set to:
+    //     // ```
+    //     language: ["en", "zh"],
+    //     // ```
+    //     indexDocs: true,
+    //     indexBlog: true,
+    //     indexPages: true,
+    //   },
+    // ],
   ],
 
 
@@ -92,15 +94,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-/*
+
       algolia: {
         // The application ID provided by Algolia
-        appId: 'IRO903CONI',
+        appId: 'NKX36XZFNO',
 
         // Public API key: it is safe to commit it
-        apiKey: 'defe7fd8690822eed8e3c94801bab286',
+        apiKey: 'f19e8240cc811784db153d8e96c386d4',
 
-        indexName: 'wiki-power',
+        indexName: 'na0h',
 
         // Optional: see doc section below
         contextualSearch: true,
@@ -115,7 +117,7 @@ const config = {
         searchPagePath: 'search',
 
         //... other Algolia params
-      },*/
+      },
 
       //sidebarCollapsible: true, //默认折叠
       image: 'img/avatar.jpg',
