@@ -44,6 +44,7 @@ module.exports = {
                 'ctfshow-中期测评',
                 'ctfshow-终极考核',
                 'ctfshow-大赛原题（未完）',
+                'ctfshow-常用姿势',
               ],
             },
             '搭建vulhub',
