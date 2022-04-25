@@ -426,9 +426,9 @@ R为指针引用，将两个属性指向同一指针地址
 ![](https://i.loli.net/2021/02/13/1cTRz4E9yOwPJp2.png)
 
 调用pyflag()即可
-1.@unserialize($_GET['try'])();为错误的语法
-2.@表示无回显，因此有了开头的报错定义需要我们反序列化
-3.目标：通过传入序列化参数使@unserialize($_GET['try'])();反序列化成为funny::pyflag();
+`@unserialize($_GET['try'])();`
+@表示无回显，因此有了开头的报错定义需要我们反序列化
+目标：通过传入序列化参数使@unserialize($_GET['try'])();反序列化成为funny::pyflag();
 原有();固需要传入的参数为：funny::pyflag;序列化后得到
 
 `poc：s:13:"funny::pyflag";`
