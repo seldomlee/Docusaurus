@@ -1961,6 +1961,65 @@ function play() {
 
 
 
+## 717-js绕过
+
+![](https://s2.loli.net/2022/06/06/o2dCPBNqKVfJTtD.png)
+
+
+
+就是说咱们的payload要在这三种情况下都能访问到target.exploit
+
+- paylod
+- 'payload'
+- "payload"
+
+这种绕过题还挺有意思的
+
+可以在浏览器的控制台自己打一下试试：
+
+```
+//先定义target，然后就开始试payload吧
+var target = {exploit:'hhh'};
+```
+
+肯定是前面加"和'，后面就用注释符//
+
+![](https://s2.loli.net/2022/06/06/RxJyY9S4AI3MoHF.png)
+
+不过这样只能满足一种，无法实现三个都满足的条件，
+
+想到可以用多行注释`/**/`,但这样还是只能符合双引号
+
+```
+/*"+target.exploit//
+```
+
+后来又想到js的正则是这样定义的：`var reg = /abc/;`而单一的`/`相当于换行
+
+那么就基于上面那个改写
+
+```
+/*"+/'*/i/+target.exploit//
+```
+
+试了很久总是差点，看了一下wp，把修饰符换成i就可以，是target一样提前定义了吗？
+
+<img src="https://s2.loli.net/2022/06/06/xPDyTgSOGYWoXQh.png" style="zoom:50%;" />
+
+
+
+- `/*"+/'*/ i / + target.exploit //`
+
+  无引号：多行注释`/**/`+ `i` + 换行的`/`+ `target.exploit` + 注释符`//`
+
+- `'/*"+/' * /i/ + target.exploit //'`
+
+  单引号：单引号定义的字符串 `'/*"+/'` + 乘`*` + 正则`/i/` + 字符串拼接`+` + `target.exploit` + 注释符`//`
+
+- `"/*" + /'*/i / + target.exploit //"`
+
+  双引号：双引号定义的字符串 `"/*" `+ 字符串拼接`+` 正则`/'*/i` + 换行的`/` + 字符串拼接`+` + `target.exploit` + 注释符`//`
+
 ## 718-[ISCC2017] 自相矛盾
 
 ```php
