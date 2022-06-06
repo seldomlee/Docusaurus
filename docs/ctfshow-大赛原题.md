@@ -2004,9 +2004,7 @@ var target = {exploit:'hhh'};
 
 试了很久总是差点，看了一下wp，把修饰符换成i就可以，是target一样提前定义了吗？
 
-<img src="https://s2.loli.net/2022/06/06/xPDyTgSOGYWoXQh.png" style="zoom:50%;" />
-
-
+![](https://s2.loli.net/2022/06/06/xPDyTgSOGYWoXQh.png)
 
 - `/*"+/'*/ i / + target.exploit //`
 
