@@ -167,7 +167,7 @@ ctf_show=
 在PHP7.1版本以后， assert()默认不再可以执行代码
 (assert在更新后无法将使用字符串作为参数，而GET或POST传入的数据默认就是字符串类型）
 
-我们都知道eval相当于将字符串拼接到原来的代码中，正常来说把assert换成eval就可以了
+我们都知道eval相当于将字符串拼接到原来的代码中，正常来说把																																									assert换成eval就可以了
 
 但这里会报错Call to undefined function EVAL()
 
