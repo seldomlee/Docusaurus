@@ -26,9 +26,6 @@ index.php查看源代码，看到关键目录system36d
 访问该目录，右键查看源代码得到642
 
 ![](https://i.loli.net/2021/09/05/HJoD4yRN5TBh7EF.png)
-<<<<<<< HEAD
-=======
-
 
 
 ## 644
