@@ -957,7 +957,9 @@ curl -H 'X-Forwarded-For: <script>alert(1);</script>' '172.2.119.5/index.php?act
 
 成功了~，然后就是弹一下cookie看看后台会不会有bot点击
 
-<img src="https://s2.loli.net/2021/12/13/FbMQjt8A9nd4KJx.png" style="zoom: 50%;" />
+![](https://s2.loli.net/2021/12/13/FbMQjt8A9nd4KJx.png)
+
+
 
 不过我记得群主过滤了xss，那么xss平台好像就不能用了，但是因为addslashes的存在，单双引号又会被弄掉
 
