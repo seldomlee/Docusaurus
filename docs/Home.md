@@ -18,7 +18,6 @@ slug: /
 [![GitHub deployments](https://img.shields.io/github/deployments/linyuxuanlin/Wiki_Docusaurus/Production?label=Build&style=flat-square)](https://vercel.com/seldomlee/docusaurus/deployments)
 [![contact](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
-<h6>Na0H |  <a href="https://beian.miit.gov.cn"> 桂ICP备2022002569号-1 </a> | Built with Docusaurus | <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">本网站由
-		<img src="../static/img/又拍云_logo6.png" width="45px" />提供CDN加速/云存储服务</a>
+<h6>Na0H |  <a href="https://beian.miit.gov.cn"> 桂ICP备2022002569号-1 </a> | Built with Docusaurus
 </h6>
 

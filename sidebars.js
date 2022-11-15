@@ -105,6 +105,7 @@ module.exports = {
           items: [
             'python实现——银行家算法、死锁检测与解除、动态内存分配',
             '停车场管理系统-flask',
+            'python爬虫-静态网站和动态网站',
           ],
         },
       ]
