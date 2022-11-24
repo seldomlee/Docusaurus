@@ -18,6 +18,19 @@ const config = {
   organizationName: 'seldomlee', // Usually your GitHub org/user name.
   projectName: 'Docusaurus', // Usually your repo name.
 
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        blog: {
+          showReadingTime: true, // 如果设置为 false，「x 分钟阅读」的文字就不会显示
+          readingTime: ({content, frontMatter, defaultReadingTime}) =>
+            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+        },
+      },
+    ],
+  ],
+
 
 
   themes: [
@@ -201,17 +214,4 @@ const config = {
     }),
 };
 
-module.exports = {
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        blog: {
-          showReadingTime: true, // 如果设置为 false，「x 分钟阅读」的文字就不会显示
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
-        },
-      },
-    ],
-  ],
-};
+module.exports = config;
