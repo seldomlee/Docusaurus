@@ -201,4 +201,17 @@ const config = {
     }),
 };
 
-module.exports = config;
+module.exports = {
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        blog: {
+          showReadingTime: true, // 如果设置为 false，「x 分钟阅读」的文字就不会显示
+          readingTime: ({content, frontMatter, defaultReadingTime}) =>
+            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
+        },
+      },
+    ],
+  ],
+};
