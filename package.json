@@ -28,7 +28,8 @@
     "remark-math": "^3.0.1",
     "typescript": ">= 2.7",
     "react-loadable": "*",
-    "@algolia/client-search":">= 4.9.1 < 6"
+    "@algolia/client-search":">= 4.9.1 < 6",
+    "@svgr/webpack":"^6.3.1"
 
   },
   "browserslist": {
