@@ -29,7 +29,7 @@
     "typescript": ">= 2.7",
     "react-loadable": "*",
     "@algolia/client-search":">= 4.9.1 < 6",
-    "@svgr/webpack": "^6.2.1",
+    "@svgr/webpack": "^6.2.1"
 
   },
   "browserslist": {
