@@ -25,7 +25,11 @@
     "prismjs": ">=1.27.0",
     "trim": ">=0.0.3",
     "nth-check": ">=2.0.1",
-    "remark-math": "^3.0.1"
+    "remark-math": "^3.0.1",
+    "typescript": ">= 2.7",
+    "react-loadable": "*",
+    "@algolia/client-search":">= 4.9.1 < 6"
+
   },
   "browserslist": {
     "production": [
