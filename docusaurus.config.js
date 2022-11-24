@@ -65,6 +65,10 @@ const config = {
           anonymizeIP: false,
         },
         docs: {
+          sidebar: {
+            hideable: true,
+            autoCollapseCategories: true,
+        },
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/seldomlee/Docusaurus/edit/main/',
@@ -134,7 +138,7 @@ const config = {
 
       //sidebarCollapsible: true, //默认折叠
       image: 'img/avatar.jpg',
-      hideableSidebar: true,
+      
 
 
       navbar: {
