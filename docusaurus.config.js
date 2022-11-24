@@ -14,7 +14,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://bloghexo-seldomlee.vercel.app/img/favicon.ico',
+  favicon: 'https://na0h.cn/img/favicon.ico',
   organizationName: 'seldomlee', // Usually your GitHub org/user name.
   projectName: 'Docusaurus', // Usually your repo name.
 
@@ -130,7 +130,7 @@ const config = {
 
         logo: {
           alt: 'My Site Logo',
-          src: "https://bloghexo-hdltzafy7-seldomlee.vercel.app/img/avatar.jpg",
+          src: "https://na0h.cn/img/avatar.jpg",
         },
 
         items: [        
@@ -139,11 +139,11 @@ const config = {
             label: "👨🏻‍💻about",
             position: "right",
           },
-        {
-          href: "https://blog.na0h.cn",
-          label: "📚博客",
-          position: "right",
-        },
+        // {
+        //   href: "https://blog.na0h.cn",
+        //   label: "📚博客",
+        //   position: "right",
+        // },
         // {
         //   href: "https://github.com/seldomlee",
         //   label: "github",
