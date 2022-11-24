@@ -29,7 +29,7 @@
     "typescript": ">= 2.7",
     "react-loadable": "*",
     "@algolia/client-search":">= 4.9.1 < 6",
-    "stable": "^0.1.8"
+    "stable": "<0.1.8"
     
     
 
