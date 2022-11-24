@@ -22,7 +22,7 @@ const config = {
     [
       '@docusaurus/preset-classic',
       {
-        blog: {
+        docs: {
           showReadingTime: true, // 如果设置为 false，「x 分钟阅读」的文字就不会显示
           readingTime: ({content, frontMatter, defaultReadingTime}) =>
             defaultReadingTime({content, options: {wordsPerMinute: 300}}),
@@ -33,26 +33,26 @@ const config = {
 
 
 
-  themes: [
-    // ... Your other themes.
+  // themes: [
+  //   ... Your other themes.
 
-    // [
-    //   // "@easyops-cn/docusaurus-search-local": "^0.23.0",
-    //   require.resolve("@easyops-cn/docusaurus-search-local"),
-    //   {
-    //     // ... Your options.
-    //     // `hashed` is recommended as long-term-cache of index file is possible.
-    //     hashed: true,
-    //     // For Docs using Chinese, The `language` is recommended to set to:
-    //     // ```
-    //     language: ["en", "zh"],
-    //     // ```
-    //     indexDocs: true,
-    //     indexBlog: true,
-    //     indexPages: true,
-    //   },
-    // ],
-  ],
+  //   [
+  //     // "@easyops-cn/docusaurus-search-local": "^0.23.0",
+  //     require.resolve("@easyops-cn/docusaurus-search-local"),
+  //     {
+  //       // ... Your options.
+  //       // `hashed` is recommended as long-term-cache of index file is possible.
+  //       hashed: true,
+  //       // For Docs using Chinese, The `language` is recommended to set to:
+  //       // ```
+  //       language: ["en", "zh"],
+  //       // ```
+  //       indexDocs: true,
+  //       indexBlog: true,
+  //       indexPages: true,
+  //     },
+  //   ],
+  // ],
 
 
   presets: [
