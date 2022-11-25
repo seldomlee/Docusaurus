@@ -10,7 +10,7 @@ const config = {
   tagline: '自己要走的路 应当自己决定',
   url: 'https://na0h.cn',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
