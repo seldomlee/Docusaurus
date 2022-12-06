@@ -1,6 +1,6 @@
 ---
-id: 学习Scrapy
-title: 学习Scrapy
+id: 利用Scrapy爬取网站
+title: 利用Scrapy爬取网站
 
 ---
 
@@ -115,14 +115,16 @@ class QidianSpider(scrapy.Spider):
 
 还是用起点中文网练手
 
-1、创建项目和爬虫文件
+### 创建项目和爬虫文件
 
 ```
 scrapy startproject qidian
 cd qidian
 scrapy genspider qidian qidian.com
 ```
-2、在items.py中定义数据结构，这次要抓取小说名、作者、小说类型和描述
+### 定义数据结构
+
+在items.py中定义数据结构，这次要抓取小说名、作者、小说类型和描述
 
 ```python
 title = scrapy.Field()
@@ -131,7 +133,7 @@ type = scrapy.Field()
 description = scrapy.Field()
 ```
 
-3、编写爬虫文件qidian.py
+### 编写爬虫文件qidian.py
 
 ```python
 import scrapy
@@ -159,7 +161,7 @@ class QidianSpider(scrapy.Spider):
 
 ```
 
-4、数据存储
+### 数据存储
 
 > 通过编写管道文件 pipelinse.py 文件实现数据的存储，将抓取的数据存放在 MySQL 数据库
 > (需要提前建库、建表)
@@ -203,7 +205,7 @@ class MyfirstspiderMysqlPipeline:
         print('执行了close_spider方法,项目已经关闭')
 ```
 
-5、修改配置文件
+### 修改配置文件
 
 > 添加日志输出、激活管道 pipelines、定义数据库常量，以及其他一些常用选项，如下所示：
 >
@@ -240,7 +242,7 @@ class MyfirstspiderMysqlPipeline:
 > MYSQL_CHARSET='utf8'
 > ```
 
-6、定义启动文件
+### 定义启动文件
 
 > 下面定义项目启动文件 run.py， 代码如下：
 >
