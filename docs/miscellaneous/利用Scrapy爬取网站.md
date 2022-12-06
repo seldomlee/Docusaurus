@@ -216,7 +216,7 @@ class MyfirstspiderMysqlPipeline:
 > #日志需要自己添加，配置文件中没有，在空白处添加即可
 > LOG_LEVEL='DEBUG'
 > #定义日志输出文件
-> LOG_FILE='maoyan.log'
+> LOG_FILE='qidian.log'
 > #设置导出数据的编码格式
 > FEED_EXPORT_ENCODING='utf-8'
 > #设置下载器延迟时间，秒为单位
@@ -229,11 +229,11 @@ class MyfirstspiderMysqlPipeline:
 > }
 > #激活管道，并添加数据存放mysql的类，200为执行优先级
 > ITEM_PIPELINES = {
->    'Maoyan100.pipelines.Maoyan100Pipeline': 300,
->     # 执行数据存储mysql
->    'Maoyan100.pipelines.Maoyan100MysqlPipeline': 200
-> 
+>       'myfirstspider.pipelines.MyfirstspiderPipeline': 300,
+>        # 执行数据存储mysql
+>       'myfirstspider.pipelines.MyfirstspiderMysqlPipeline': 200,
 > }
+> 
 > #在配置文件末尾添加mysql常用变量
 > MYSQL_HOST='localhost'
 > MYSQL_USER='root'
