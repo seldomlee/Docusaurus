@@ -5,6 +5,38 @@ title: Java面向对象
 
 
 
+```
+Java安全{
+	IDEA
+	Maven
+	Java Web
+	反射
+	ASM/Javassist
+	JNDI：8u191低版本和高版本怎么打(反序列化/本地工厂)，以及如何审计
+	RMI是什么
+	Java Agent：启动原理和RASP的实现原理
+	JMX/JDWP
+	反序列化基础：gadget链、JEP290是什么
+	FastJson反序列化
+	WebLogic：二次反序列化、XML Decoder、IIOP/T3
+	Xstream反序列化
+	Hessian反序列化：dubbo
+	SnakeYAML反序列化
+	Shiro：Shiro经典漏洞、Padding Oracle漏洞形成原理、如何通过Shiro注入内存马
+	Struts2
+	Spring：Spring4Shell、Spring EL、SpringBoot Actuator利用
+	Tomcat：Tomcat AJP RCE
+	内存马原理：原理是什么、有哪些内存马
+	内存马如何查杀
+	Log4J
+	其他组件漏洞：Apache Solr、Flink
+	进阶：tabby、codeql等静态分析
+}
+
+```
+
+
+
 java是面向对象的编程语言，面向对象程序设计具有可重用性、可扩展性、可管理性的优点
 
 
