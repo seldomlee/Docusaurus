@@ -2,7 +2,7 @@
 title: 长安杯线上赛高校组
 id: 长安杯线上赛高校组
 date: 2021-09-25 19:33:30
-sidebar_position: 5
+
 ---
 
 <!-- more -->

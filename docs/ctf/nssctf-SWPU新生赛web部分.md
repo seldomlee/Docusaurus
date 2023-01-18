@@ -2,7 +2,7 @@
 title: nssctf-SWPU新生赛web部分
 id: nssctf-SWPU新生赛web部分
 date: 2021-10-11 12:40:30
-sidebar_position: 6
+
 ---
 
 <!-- more -->

@@ -2,7 +2,7 @@
 title: ctfshow-8月赛吃瓜杯
 id: ctfshow-8月赛吃瓜杯
 date: 2021-08-16 12:40:30
-sidebar_position: 3
+
 ---
 
 <!-- more -->

@@ -1,7 +1,7 @@
 ---
 title: 各比赛签到记录
 id: 各比赛签到记录
-sidebar_position: 1
+
 ---
 
 <!-- more -->
