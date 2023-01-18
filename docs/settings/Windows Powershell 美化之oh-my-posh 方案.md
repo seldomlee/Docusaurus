@@ -1,6 +1,7 @@
 ---
 title: Windows Powershell美化之oh-my-posh的配置经历
 id: Windows Powershell美化
+date: 2021-11-03 19:32:30
 ---
 
 <!-- more -->

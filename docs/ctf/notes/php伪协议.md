@@ -1,6 +1,8 @@
 ---
 title: php伪协议的学习
 id: php伪协议的学习
+date: 2021-02-25 22:03:04
+sidebar_position: 3
 ---
 
 <!-- more -->

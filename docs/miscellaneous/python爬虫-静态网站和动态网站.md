@@ -1,8 +1,8 @@
 ---
 title: python爬虫-静态网站和动态网站
 id: python爬虫-静态网站和动态网站
-layout: doc
-date: 2022-11-15T18:00
+date: 2022-11-15
+sidebar_position: 4
 ---
 
 <!-- more -->

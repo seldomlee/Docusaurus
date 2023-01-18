@@ -1,6 +1,8 @@
 ---
 title: upload-labs靶场通关小记
 id: upload-labs靶场通关小记
+date: 2021-02-12 15:15:41
+sidebar_position: 5
 ---
 
 <!-- more -->

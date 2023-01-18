@@ -1,6 +1,8 @@
 ---
 title: ctfshow-jwt
 id: ctfshow-jwt
+date: 2021-08-25 6:40:33
+sidebar_position: 10
 ---
 
 <!-- more -->

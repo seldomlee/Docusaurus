@@ -1,6 +1,7 @@
 ---
 title: 在华为云配置kali-linux
 id: 在华为云配置kali-linux
+date: 2021-05-7 22:47:28
 ---
 
 <!-- more -->

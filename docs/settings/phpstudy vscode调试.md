@@ -1,7 +1,6 @@
 ---
 id: PHPStudy+VSCode Xdebug调试配置
 title: PHPStudy+VSCode Xdebug调试配置
-layout: doc
 ---
 
 这里用的最简单的方法

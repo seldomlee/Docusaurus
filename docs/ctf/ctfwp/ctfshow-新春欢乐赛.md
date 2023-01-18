@@ -1,6 +1,8 @@
 ---
 title: ctfshow-新春欢乐赛
 id: ctfshow-新春欢乐赛
+date: 2022-02-01 12:40:30
+sidebar_position: 9
 ---
 
 <!-- more -->

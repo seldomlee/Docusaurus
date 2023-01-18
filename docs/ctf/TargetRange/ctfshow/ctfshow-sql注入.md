@@ -1,6 +1,8 @@
 ---
 title: ctfshow-sql注入
 id: ctfshow-sql注入
+date: 2021-08-01 16:33:30
+sidebar_position: 4
 ---
 
 <!-- more -->

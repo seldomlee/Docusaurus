@@ -1,6 +1,8 @@
 ---
 title: ctfshow-xss
 id: ctfshow-xss
+date: 2021-09-04 17:38:33
+sidebar_position: 8
 ---
 
 <!-- more -->

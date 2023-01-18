@@ -1,7 +1,7 @@
 ---
 id: 走进java
 title: 走进java
-layout: doc
+sidebar_position: 1
 ---
 
 ## 前言

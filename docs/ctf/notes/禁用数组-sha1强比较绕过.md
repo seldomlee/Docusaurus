@@ -1,6 +1,8 @@
 ---
 title: 禁用数组-sha1强比较绕过
 id: 禁用数组-sha1强比较绕过
+date: 2021-10-21 10:59:30
+sidebar_position: 6
 ---
 
 <!-- more -->

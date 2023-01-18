@@ -1,6 +1,7 @@
 ---
 id: ctfshow-常用姿势
 title: ctfshow-常用姿势
+sidebar_position: 19
 ---
 
 

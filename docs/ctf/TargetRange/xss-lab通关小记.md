@@ -1,6 +1,8 @@
 ---
 title: xss-lab通关小记
 id: xss-lab通关小记
+date: 2021-01-03 11:17:18
+sidebar_position: 2
 ---
 
 <!-- more -->

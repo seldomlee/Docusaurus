@@ -1,6 +1,8 @@
 ---
 id: ctfshow-重温命令执行
 title: ctfshow-重温命令执行
+date: 2021-11-04 01:06:30
+sidebar_position: 2
 ---
 
 
@@ -804,18 +806,7 @@ c=include('/flag.txt');exit(0);
 
 ```php
 <?php
-error_reporting(0);
-ini_set('display_errors', 0);
-// 你们在炫技吗？
-if(isset($_POST['c'])){
-        $c= $_POST['c'];
-        eval($c);
-        $s = ob_get_contents();
-        ob_end_clean();
-        echo preg_replace("/[0-9]|[a-z]/i","?",$s);
-}else{
-    highlight_file(__FILE__);
-}
+                                                                                                                                                                                                                                                                                                           
 
 ?>
 ```

@@ -1,6 +1,8 @@
 ---
 title: ctfshow-中期测评
 id: ctfshow-中期测评
+date: 2021-11-22 14:10:30
+sidebar_position: 16
 ---
 
 <!-- more -->

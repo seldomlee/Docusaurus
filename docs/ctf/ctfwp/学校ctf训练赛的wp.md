@@ -1,6 +1,8 @@
 ---
 title: 学校ctf训练赛的wp
 id: 学校ctf训练赛的wp
+date: 2021-01-29 11:40:17
+sidebar_position: 2
 ---
 
 <!-- more -->

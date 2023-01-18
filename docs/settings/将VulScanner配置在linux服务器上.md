@@ -1,7 +1,6 @@
 ---
 id: 将VulScanner配置在linux服务器下
 title: 将VulScanner配置在linux服务器下
-layout: doc
 ---
 
 

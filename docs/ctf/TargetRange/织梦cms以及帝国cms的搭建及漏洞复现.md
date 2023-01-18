@@ -1,6 +1,8 @@
 ---
 title: 织梦cms、帝国cms的搭建及漏洞复现
 id: 织梦cms、帝国cms的搭建及漏洞复现
+date: 2021-02-14 21:14:21
+sidebar_position: 6
 ---
 
 <!-- more -->

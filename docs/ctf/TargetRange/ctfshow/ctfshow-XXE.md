@@ -1,6 +1,8 @@
 ---
 title: ctfshow-xxe
 id: ctfshow-xxe
+date: 2021-08-21 13:33:33
+sidebar_position: 13
 ---
 
 <!-- more -->

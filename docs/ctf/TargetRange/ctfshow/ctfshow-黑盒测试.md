@@ -1,6 +1,8 @@
 ---
 title: ctfshow-黑盒测试
 id: ctfshow-黑盒测试
+date: 2021-10-21 16:43:30
+sidebar_position: 14
 ---
 
 <!-- more -->

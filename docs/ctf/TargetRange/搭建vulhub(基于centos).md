@@ -1,6 +1,8 @@
 ---
 title: 搭建vulhub(基于centos)
 id: 搭建vulhub
+date: 2021-02-07 14:53:30
+sidebar_position: 4
 ---
 
 <!-- more -->

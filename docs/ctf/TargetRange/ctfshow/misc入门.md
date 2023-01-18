@@ -1,6 +1,8 @@
 ---
 title: ctfshow-misc入门
 id: ctfshow-misc入门
+date: 2021-06-05 23:47:28
+sidebar_position: 1
 ---
 
 <!-- more -->

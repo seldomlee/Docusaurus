@@ -1,6 +1,8 @@
 ---
 title: sql注入的一些基操
 id: sql注入的一些基操
+date: 2020-12-30 20:19:04
+sidebar_position: 1
 ---
 
 <!-- more -->

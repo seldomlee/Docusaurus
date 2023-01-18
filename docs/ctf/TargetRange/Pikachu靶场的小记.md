@@ -1,6 +1,8 @@
 ---
 title: Pikachu靶场通关小记
 id: Pikachu靶场通关小记
+date: 2021-01-16 11:40:17
+sidebar_position: 3
 ---
 
 <!-- more -->
